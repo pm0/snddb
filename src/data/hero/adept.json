@@ -1,0 +1,19 @@
+{
+  "id": "adept",
+  "name": "Adept",
+  "type": "adept",
+  "level": 1,
+  "faces": [
+    { "type": "mana", "value": 1 },
+    { "type": "mana", "value": 2 },
+    { "type": "mana", "value": 2 },
+    null,
+    null,
+    { "type": "mana", "value": 1 }
+  ],
+  "spell": {
+    "name": "Slice",
+    "cost": 3,
+    "description": "1 damage to all enemies"
+  }
+}

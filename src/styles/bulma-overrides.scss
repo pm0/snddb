@@ -1,0 +1,109 @@
+@use 'sass:color';
+@import '~bulma/sass/utilities/functions.sass';
+
+$adept: rgb(33, 124, 145);
+$acolyte: rgb(173, 31, 30);
+$defender: rgb(104, 120, 135);
+$warrior: rgb(182, 158, 10);
+$thief: rgb(196, 94, 22);
+$full-red: rgb(255, 0, 0);
+
+$adept-invert: findColorInvert($adept);
+$acolyte-invert: findColorInvert($acolyte);
+$defender-invert: findColorInvert($defender);
+$warrior-invert: findColorInvert($warrior);
+$thief-invert: findColorInvert($thief);
+$full-red-invert: findColorInvert($full-red);
+
+$custom-colors: (
+  'adept': (
+    $adept,
+    $adept-invert,
+  ),
+  'acolyte': (
+    $acolyte,
+    $acolyte-invert,
+  ),
+  'defender': (
+    $defender,
+    $defender-invert,
+  ),
+  'warrior': (
+    $warrior,
+    $warrior-invert,
+  ),
+  'thief': (
+    $thief,
+    $thief-invert,
+  ),
+  'full-red': (
+    $full-red,
+    $full-red-invert,
+  ),
+);
+
+$heroes-colors: (
+  'adept': $adept,
+  'acolyte': $acolyte,
+  'defender': $defender,
+  'warrior': $warrior,
+  'thief': $thief,
+);
+
+$weight-extralight: 200;
+
+$family-primary: 'Source Sans Pro', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Arial',
+  sans-serif;
+$family-secondary: 'Source Sans Pro', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto',
+  'Arial', sans-serif;
+$title-family: 'Source Sans Pro', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Arial',
+  sans-serif;
+$subtitle-family: 'Source Sans Pro', BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto',
+  'Arial', sans-serif;
+
+@import '~bulma/sass/utilities/initial-variables.sass';
+
+$scheme-main: $black;
+$scheme-main-bis: $black-bis;
+$scheme-main-ter: $black-ter;
+$scheme-invert-main: $white;
+$scheme-invert-main-bis: $white-bis;
+$scheme-invert-main-ter: $white-ter;
+
+$background: $grey-darker;
+
+$text: $white-ter;
+$text-light: $grey-lightest;
+$text-strong: $white-bis;
+
+$link: $grey-light;
+$link-visited: $grey-light;
+$link-hover: $white-ter;
+
+$navbar-height: 3rem;
+$navbar-item-img-max-height: 3rem;
+$navbar-padding-horizontal: 4rem;
+$navbar-background-color: $black-bis;
+
+$footer-padding: 2rem 1rem 3rem;
+$footer-background-color: $black-bis;
+
+@each $name, $snd-hero-color in $heroes-colors {
+  .snd-hero-link-#{$name} {
+    border: 2px solid color.scale($snd-hero-color, $blackness: 20%);
+    border-radius: 2px;
+    background-color: $snd-hero-color;
+    color: $white-ter;
+    font-size: $size-5;
+    padding: 0.5rem 1rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .snd-hero-title-#{$name} {
+    text-decoration: solid underline $snd-hero-color 4px;
+    text-underline-offset: 0.1rem;
+  }
+}

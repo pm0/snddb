@@ -1,0 +1,19 @@
+{
+  "id": "acolyte",
+  "name": "Acolyte",
+  "type": "acolyte",
+  "level": 1,
+  "faces": [
+    { "type": "heal", "value": 3 },
+    { "type": "max-hp", "value": 2 },
+    { "type": "max-hp", "value": 1 },
+    { "type": "mana", "value": 1 },
+    { "type": "mana", "value": 1 },
+    { "type": "heal", "value": 3 }
+  ],
+  "spell": {
+    "name": "Restore",
+    "cost": 2,
+    "description": "Heal 1 to all allies"
+  }
+}
