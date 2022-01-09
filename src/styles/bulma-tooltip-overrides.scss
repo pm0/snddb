@@ -1,15 +1,21 @@
+@use 'sass:list';
+
 $tooltip-background-opacity: 1;
 $tooltip-font-size: $size-6;
 $tooltip-radius: 0;
 
-$keyword-blue: rgb(33, 124, 145);
-$keyword-green: rgb(57, 128, 68);
-$keyword-orange: rgb(196, 94, 22);
-$keyword-pink: rgb(211, 43, 227);
-$keyword-purple: rgb(107, 68, 133);
-$keyword-red: rgb(160, 36, 36);
-$keyword-white: rgb(241, 229, 181);
-$keyword-yellow: rgb(177, 156, 28);
+$tooltip-light-background: $white-ter;
+$tooltip-dark-background: $black;
+
+// list of color and background
+$keyword-blue: (rgb(33, 124, 145), $tooltip-light-background);
+$keyword-green: (rgb(57, 128, 68), $tooltip-light-background);
+$keyword-orange: (rgb(196, 94, 22), $tooltip-light-background);
+$keyword-pink: (rgb(211, 43, 227), $black);
+$keyword-purple: (rgb(107, 68, 133), $tooltip-light-background);
+$keyword-red: (rgb(160, 36, 36), $tooltip-light-background);
+$keyword-white: (rgb(241, 229, 181), $black);
+$keyword-yellow: (rgb(177, 156, 28), $black);
 
 $keywords-colors: (
   'bloodlust': $keyword-red,
@@ -44,13 +50,18 @@ $keywords-colors: (
 );
 
 @each $name, $keyword-color in $keywords-colors {
+  $color: list.nth($keyword-color, 1);
+  $background-color: list.nth($keyword-color, 2);
+
   span[data-tooltip].keyword-#{$name} {
     font-weight: bold;
-    color: $keyword-color;
-    border-bottom: 1px dotted $keyword-color;
+    color: $color;
+    border-bottom: 1px dotted $color;
 
     &::before {
-      color: $keyword-color !important;
+      color: $color !important;
+      background: $background-color !important;
+      border: 1px solid $color !important;
     }
   }
 }

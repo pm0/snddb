@@ -1,7 +1,7 @@
 @import '~bulma/sass/utilities/_all.sass';
 
 @include mobile {
-  $die-size: 64px;
+  $die-size: 84px;
 
   .face {
     width: $die-size;
@@ -37,18 +37,58 @@ $face-offset: -$face-border;
   border-style: solid;
 }
 
+.faceBlank {
+  composes: faceShown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #ad1f1e;
+
+  @include mobile {
+    font-size: 3rem;
+  }
+}
+
+.facePlaceholder {
+  composes: face;
+}
+
+$inner-padding-vertical: 8px;
+$inner-padding-horizontal: 12px;
+$inner-padding-vertical-mobile: 4px;
+$inner-padding-horizontal-mobile: 6px;
+
 .faceSpell {
   composes: face;
-  padding: 4px 2px 2px 4px;
+  padding: $face-border 0 0 $face-border;
 
   > div {
     width: 100%;
     height: 100%;
     border-width: $face-border;
     border-style: dashed;
+    padding-top: $inner-padding-vertical - $face-border;
+    padding-right: $inner-padding-horizontal;
+    padding-bottom: $inner-padding-vertical;
+    padding-left: $inner-padding-horizontal - $face-border;
+
+    @include mobile {
+      padding-top: $inner-padding-vertical-mobile - $face-border;
+      padding-right: $inner-padding-horizontal-mobile;
+      padding-bottom: $inner-padding-vertical-mobile;
+      padding-left: $inner-padding-horizontal-mobile - $face-border;
+      font-size: 0.75rem;
+    }
   }
 }
 
-.facePlaceholder {
-  composes: face;
+.inner {
+  height: 100%;
+  padding: $inner-padding-vertical $inner-padding-horizontal;
+
+  @include mobile {
+    padding: $inner-padding-vertical-mobile $inner-padding-horizontal-mobile;
+    font-size: 0.75rem;
+  }
 }

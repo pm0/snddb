@@ -1,0 +1,19 @@
+{
+  "id": "herbalist",
+  "name": "Herbalist",
+  "type": "acolyte",
+  "level": 2,
+  "faces": [
+    { "effect": "heal-regen", "value": 1 },
+    { "effect": "poison-single", "value": 2 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "shield-growth", "value": 2 },
+    null,
+    { "effect": "heal-regen", "value": 1 }
+  ],
+  "spell": {
+    "name": "Vine",
+    "cost": 1,
+    "description": "1 damage or heal 1"
+  }
+}
