@@ -1,0 +1,19 @@
+{
+  "id": "medic",
+  "name": "Medic",
+  "type": "acolyte",
+  "level": 2,
+  "faces": [
+    { "effect": "heal-cleave", "value": 2 },
+    { "effect": "heal-cleanse", "value": 3 },
+    { "effect": "heal-regen", "value": 1 },
+    { "effect": "mana", "value": 2 },
+    null,
+    { "effect": "heal-cleave", "value": 2 }
+  ],
+  "spell": {
+    "name": "Renew",
+    "cost": 2,
+    "description": "Set a hero to 6 hp"
+  }
+}

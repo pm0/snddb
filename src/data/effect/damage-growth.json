@@ -1,0 +1,6 @@
+{
+  "id": "damage-growth",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-growth\">growth</span>",
+  "references": ["growth"]
+}

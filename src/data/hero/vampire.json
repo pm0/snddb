@@ -1,0 +1,19 @@
+{
+  "id": "vampire",
+  "name": "Vampire",
+  "type": "acolyte",
+  "level": 2,
+  "faces": [
+    { "effect": "heal", "value": 5 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "max-hp-all-pain", "value": 1 },
+    { "effect": "damage-self-heal", "value": 2 },
+    { "effect": "damage-self-heal", "value": 2 },
+    { "effect": "heal", "value": 5 }
+  ],
+  "spell": {
+    "name": "Infuse",
+    "cost": 2,
+    "description": "Heal 2 to all allies"
+  }
+}

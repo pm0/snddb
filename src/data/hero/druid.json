@@ -1,0 +1,19 @@
+{
+  "id": "druid",
+  "name": "Druid",
+  "type": "acolyte",
+  "level": 2,
+  "faces": [
+    { "effect": "mana", "value": 2 },
+    { "effect": "damage-growth", "value": 2 },
+    { "effect": "shield-growth", "value": 2 },
+    { "effect": "heal-cleanse", "value": 3 },
+    null,
+    { "effect": "mana", "value": 2 }
+  ],
+  "spell": {
+    "name": "Balance",
+    "cost": 3,
+    "description": "1 damage to all enemies and heal 1 to all allies"
+  }
+}

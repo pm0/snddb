@@ -1,0 +1,6 @@
+{
+  "id": "damage-self-heal",
+  "hasValue": true,
+  "description": "{value} damage and self-heal {value}",
+  "references": ["growth"]
+}

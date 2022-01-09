@@ -1,0 +1,6 @@
+{
+  "id": "max-hp-all-pain",
+  "hasValue": true,
+  "description": "All other heroes gain +{value} max hp<br/><span class=\"keyword-pain\">pain</span>",
+  "references": ["pain"]
+}

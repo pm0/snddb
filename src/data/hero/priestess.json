@@ -1,0 +1,19 @@
+{
+  "id": "priestess",
+  "name": "Priestess",
+  "type": "acolyte",
+  "level": 2,
+  "faces": [
+    { "effect": "heal-mana", "value": 1 },
+    { "effect": "max-hp", "value": 3 },
+    { "effect": "max-hp", "value": 3 },
+    { "effect": "heal-all", "value": 1 },
+    { "effect": "heal-all", "value": 1 },
+    { "effect": "heal-mana", "value": 1 }
+  ],
+  "spell": {
+    "name": "Flash",
+    "cost": 2,
+    "description": "Heal 1 and shield 1 to all dying heroes"
+  }
+}

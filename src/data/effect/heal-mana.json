@@ -1,0 +1,5 @@
+{
+  "id": "heal-mana",
+  "hasValue": true,
+  "description": "Heal {value} and +{value} mana"
+}

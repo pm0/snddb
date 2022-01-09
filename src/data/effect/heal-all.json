@@ -1,0 +1,5 @@
+{
+  "id": "heal-all",
+  "hasValue": true,
+  "description": "Heal {value} to all allies"
+}
