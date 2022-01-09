@@ -106,4 +106,8 @@ $footer-background-color: $black-bis;
     text-decoration: solid underline $snd-hero-color 4px;
     text-underline-offset: 0.1rem;
   }
+
+  .snd-hero-die-face-#{$name} {
+    border-color: $snd-hero-color;
+  }
 }

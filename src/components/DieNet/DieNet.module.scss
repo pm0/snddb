@@ -1,0 +1,54 @@
+@import '~bulma/sass/utilities/_all.sass';
+
+@include mobile {
+  $die-size: 64px;
+
+  .face {
+    width: $die-size;
+    height: $die-size;
+  }
+}
+
+@include tablet {
+  $die-size: 128px;
+
+  .face {
+    width: $die-size;
+    height: $die-size;
+  }
+}
+
+$face-border: 2px;
+$face-offset: -$face-border;
+
+.root {
+  > div:not(:last-child) {
+    margin-bottom: $face-offset;
+  }
+
+  > div > div:not(:last-child) {
+    margin-right: $face-offset;
+  }
+}
+
+.faceShown {
+  composes: face;
+  border-width: $face-border;
+  border-style: solid;
+}
+
+.faceSpell {
+  composes: face;
+  padding: 4px 2px 2px 4px;
+
+  > div {
+    width: 100%;
+    height: 100%;
+    border-width: $face-border;
+    border-style: dashed;
+  }
+}
+
+.facePlaceholder {
+  composes: face;
+}
