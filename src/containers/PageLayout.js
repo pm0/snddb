@@ -18,7 +18,7 @@ function PageLayout({ children }) {
         <Container>
           <Content style={{ textAlign: 'center' }}>
             <div className="is-size-6">
-              <a href="https://tann.itch.io/slice-dice">Slice &amp; Dice</a> is a game created by{' '}
+              <a href="https://tann.itch.io/slice-dice">Slice &amp; Dice</a> created by{' '}
               <a href="https://tann.fun/">tann</a> and{' '}
               <a href="https://twitter.com/a3um_pixels">a3um</a>.
             </div>

@@ -14,7 +14,7 @@ const IndexPageContent = (props) => {
             Slice <span className="has-text-full-red">&amp;</span> Dice DB
           </Heading>
           <Heading size={5} className="has-text-centered">
-            For the game <a href="https://tann.itch.io/slice-dice">Slice &amp; Dice</a> by{' '}
+            For <a href="https://tann.itch.io/slice-dice">Slice &amp; Dice</a> by{' '}
             <a href="https://tann.fun/">tann</a> and{' '}
             <a href="https://twitter.com/a3um_pixels">a3um</a>
           </Heading>
