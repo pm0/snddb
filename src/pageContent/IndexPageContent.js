@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Hero, Heading } from 'react-bulma-components';
 import BodyLayout from '../containers/BodyLayout';
+import HeroesSection from '../components/HeroesSection';
 
 const IndexPageContent = (props) => {
   const { heroes } = props;
@@ -21,18 +21,7 @@ const IndexPageContent = (props) => {
         </Hero.Body>
       </Hero>
       <BodyLayout>
-        <Heading size={3}>Heroes</Heading>
-        <div className="is-flex">
-          {heroes.map((hero) => (
-            <Link
-              key={hero.jsonId}
-              to={`/hero/${hero.jsonId}/`}
-              className={`snd-hero-link-${hero.type}`}
-            >
-              {hero.name}
-            </Link>
-          ))}
-        </div>
+        <HeroesSection heroes={heroes} headingSize={3} linkTitle />
       </BodyLayout>
     </>
   );

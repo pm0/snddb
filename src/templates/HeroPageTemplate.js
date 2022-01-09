@@ -25,14 +25,20 @@ export const query = graphql`
 `;
 
 const HeroPageTemplate = (props) => {
-  const { data, errors } = props;
+  const { data, pageContext, errors } = props;
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   const hero = data && data.hero;
+
   return (
     <PageLayout>
       {errors && <SEO title="GraphQL Error" />}
       {hero && <SEO title={hero.name} />}
       {errors && <GraphQLErrorList errors={errors} />}
-      {hero && <HeroPageContent {...hero} />}
+      {hero && <HeroPageContent hero={hero} crumbs={crumbs} />}
     </PageLayout>
   );
 };
