@@ -3,6 +3,7 @@
   "name": "Medic",
   "type": "acolyte",
   "level": 2,
+  "hp": 6,
   "faces": [
     { "effect": "heal-cleave", "value": 2 },
     { "effect": "heal-cleanse", "value": 3 },

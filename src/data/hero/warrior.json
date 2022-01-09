@@ -3,6 +3,7 @@
   "name": "Warrior",
   "type": "warrior",
   "level": 1,
+  "hp": 5,
   "faces": [
     { "effect": "damage", "value": 1 },
     { "effect": "damage", "value": 2 },

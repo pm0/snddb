@@ -11,6 +11,7 @@ export const query = graphql`
     hero(jsonId: { eq: $id }) {
       name
       level
+      hp
       faces {
         value
         effect {

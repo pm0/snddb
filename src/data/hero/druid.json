@@ -3,6 +3,7 @@
   "name": "Druid",
   "type": "acolyte",
   "level": 2,
+  "hp": 7,
   "faces": [
     { "effect": "mana", "value": 2 },
     { "effect": "damage-growth", "value": 2 },

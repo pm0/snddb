@@ -3,6 +3,7 @@
   "name": "Adept",
   "type": "adept",
   "level": 1,
+  "hp": 4,
   "faces": [
     { "effect": "mana", "value": 1 },
     { "effect": "mana", "value": 2 },

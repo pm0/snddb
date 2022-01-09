@@ -6,7 +6,7 @@ import DieNet from '../components/DieNet';
 
 const HeroPageContent = (props) => {
   const { hero, crumbs } = props;
-  const { name, level, faces, spell, type } = hero;
+  const { name, level, hp, faces, spell, type } = hero;
 
   return (
     <BodyLayout>
@@ -15,7 +15,9 @@ const HeroPageContent = (props) => {
         {name}
       </Heading>
       <Heading size={4} subtitle>
-        Level {level}
+        Level <span className="has-text-weight-bold">{level}</span>{' '}
+        <span className="has-text-weight-bold">|</span> HP{' '}
+        <span className="has-text-weight-bold">{hp}</span>
       </Heading>
       <DieNet faces={faces} spell={spell} heroType={type} />
     </BodyLayout>

@@ -3,6 +3,7 @@
   "name": "Priestess",
   "type": "acolyte",
   "level": 2,
+  "hp": 7,
   "faces": [
     { "effect": "heal-mana", "value": 1 },
     { "effect": "max-hp", "value": 3 },

@@ -3,6 +3,7 @@
   "name": "Herbalist",
   "type": "acolyte",
   "level": 2,
+  "hp": 7,
   "faces": [
     { "effect": "heal-regen", "value": 1 },
     { "effect": "poison-single", "value": 2 },

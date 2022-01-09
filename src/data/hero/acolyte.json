@@ -3,6 +3,7 @@
   "name": "Acolyte",
   "type": "acolyte",
   "level": 1,
+  "hp": 4,
   "faces": [
     { "effect": "heal", "value": 3 },
     { "effect": "max-hp", "value": 2 },

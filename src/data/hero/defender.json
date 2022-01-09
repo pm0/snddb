@@ -3,6 +3,7 @@
   "name": "Defender",
   "type": "defender",
   "level": 1,
+  "hp": 5,
   "faces": [
     { "effect": "damage", "value": 1 },
     { "effect": "shield", "value": 2 },

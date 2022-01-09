@@ -3,6 +3,7 @@
   "name": "Vampire",
   "type": "acolyte",
   "level": 2,
+  "hp": 7,
   "faces": [
     { "effect": "heal", "value": 5 },
     { "effect": "mana", "value": 2 },

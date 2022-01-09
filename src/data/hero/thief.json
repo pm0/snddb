@@ -3,6 +3,7 @@
   "name": "Thief",
   "type": "thief",
   "level": 1,
+  "hp": 4,
   "faces": [
     { "effect": "ranged", "value": 1 },
     { "effect": "damage", "value": 2 },
