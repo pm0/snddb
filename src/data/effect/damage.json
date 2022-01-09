@@ -1,0 +1,5 @@
+{
+  "id": "damage",
+  "hasValue": true,
+  "description": "{value} damage"
+}

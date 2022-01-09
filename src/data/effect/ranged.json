@@ -1,0 +1,6 @@
+{
+  "id": "ranged",
+  "hasValue": true,
+  "description": "{value} damage<br/><span className=\"keyword-ranged\">ranged</span>",
+  "references": "ranged"
+}

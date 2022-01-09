@@ -1,0 +1,5 @@
+{
+  "id": "max-hp",
+  "hasValue": true,
+  "description": "+{value} max hp"
+}

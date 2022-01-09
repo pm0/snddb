@@ -1,0 +1,14 @@
+{
+  "id": "warrior",
+  "name": "Warrior",
+  "type": "warrior",
+  "level": 1,
+  "faces": [
+    { "type": "damage", "value": 1 },
+    { "type": "damage", "value": 2 },
+    { "type": "damage", "value": 2 },
+    { "type": "shield", "value": 1 },
+    { "type": "shield", "value": 1 },
+    { "type": "damage", "value": 1 }
+  ]
+}
