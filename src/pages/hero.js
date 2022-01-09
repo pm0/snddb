@@ -29,8 +29,6 @@ const HeroesPage = (props) => {
     breadcrumb: { crumbs },
   } = pageContext;
 
-  const hero = data && data.hero;
-
   if (errors) {
     return (
       <PageLayout>

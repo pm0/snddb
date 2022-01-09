@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Heading } from 'react-bulma-components';
 
+const customTypeSort = (a, b) => {
+  const order = ['adept', 'acolyte', 'defender', 'warrior', 'thief'];
+  if (order.indexOf(a.type) > order.indexOf(b.type)) {
+    return 1;
+  } else {
+    return -1;
+  }
+};
+
 const HeroesSection = (props) => {
   const { heroes, headingSize, linkTitle } = props;
 
@@ -18,7 +27,7 @@ const HeroesSection = (props) => {
     <>
       {heading}
       <div className="is-flex">
-        {heroes.map((hero) => (
+        {heroes.sort(customTypeSort).map((hero) => (
           <Link
             key={hero.jsonId}
             to={`/hero/${hero.jsonId}/`}

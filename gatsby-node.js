@@ -41,7 +41,12 @@ async function createHeroPages(graphql, actions) {
     createPage({
       path,
       component: require.resolve('./src/templates/HeroPageTemplate.js'),
-      context: { id },
+      context: {
+        id,
+        effectIds: edge.node.faces
+          .map((face) => (face ? face.type : ''))
+          .filter((val, idx, self) => val && self.indexOf(val) === idx),
+      },
     });
   });
 }
