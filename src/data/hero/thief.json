@@ -4,11 +4,11 @@
   "type": "thief",
   "level": 1,
   "faces": [
-    { "type": "ranged", "value": 1 },
-    { "type": "damage", "value": 2 },
-    { "type": "damage", "value": 2 },
-    { "type": "shield", "value": 1 },
+    { "effect": "ranged", "value": 1 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "shield", "value": 1 },
     null,
-    { "type": "ranged", "value": 1 }
+    { "effect": "ranged", "value": 1 }
   ]
 }

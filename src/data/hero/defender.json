@@ -4,11 +4,11 @@
   "type": "defender",
   "level": 1,
   "faces": [
-    { "type": "damage", "value": 1 },
-    { "type": "shield", "value": 2 },
-    { "type": "shield", "value": 2 },
-    { "type": "shield", "value": 2 },
-    { "type": "shield", "value": 1 },
-    { "type": "damage", "value": 1 }
+    { "effect": "damage", "value": 1 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 1 },
+    { "effect": "damage", "value": 1 }
   ]
 }

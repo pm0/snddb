@@ -12,6 +12,7 @@
     "prettify": "prettier --write ."
   },
   "dependencies": {
+    "@creativebulma/bulma-tooltip": "^1.2.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-breadcrumb": "^12.3.0",
     "gatsby-plugin-google-fonts": "^1.0.1",

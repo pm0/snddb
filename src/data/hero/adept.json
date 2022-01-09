@@ -4,12 +4,12 @@
   "type": "adept",
   "level": 1,
   "faces": [
-    { "type": "mana", "value": 1 },
-    { "type": "mana", "value": 2 },
-    { "type": "mana", "value": 2 },
+    { "effect": "mana", "value": 1 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "mana", "value": 2 },
     null,
     null,
-    { "type": "mana", "value": 1 }
+    { "effect": "mana", "value": 1 }
   ],
   "spell": {
     "name": "Slice",

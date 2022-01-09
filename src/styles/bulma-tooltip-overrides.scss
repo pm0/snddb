@@ -1,0 +1,56 @@
+$tooltip-background-opacity: 1;
+$tooltip-font-size: $size-6;
+$tooltip-radius: 0;
+
+$keyword-blue: rgb(33, 124, 145);
+$keyword-green: rgb(57, 128, 68);
+$keyword-orange: rgb(196, 94, 22);
+$keyword-pink: rgb(211, 43, 227);
+$keyword-purple: rgb(107, 68, 133);
+$keyword-red: rgb(160, 36, 36);
+$keyword-white: rgb(241, 229, 181);
+$keyword-yellow: rgb(177, 156, 28);
+
+$keywords-colors: (
+  'bloodlust': $keyword-red,
+  'boost': $keyword-blue,
+  'cantrip': $keyword-pink,
+  'charged': $keyword-blue,
+  'cleanse': $keyword-white,
+  'cleave': $keyword-white,
+  'cruel': $keyword-purple,
+  'drain': $keyword-red,
+  'duplicate': $keyword-blue,
+  'eliminate': $keyword-red,
+  'engage': $keyword-yellow,
+  'flanking': $keyword-white,
+  'growth': $keyword-green,
+  'heavy': $keyword-yellow,
+  'pain': $keyword-red,
+  'petrify': $keyword-yellow,
+  'poison': $keyword-green,
+  'rampage': $keyword-purple,
+  'ranged': $keyword-white,
+  'regen': $keyword-red,
+  'removed': $keyword-white,
+  'rescue': $keyword-yellow,
+  'revenge': $keyword-orange,
+  'single-cast': $keyword-purple,
+  'single-use': $keyword-red,
+  'steel': $keyword-white,
+  'undying': $keyword-white,
+  'vulnerable': $keyword-orange,
+  'weaken': $keyword-green,
+);
+
+@each $name, $keyword-color in $keywords-colors {
+  span[data-tooltip].keyword-#{$name} {
+    font-weight: bold;
+    color: $keyword-color;
+    border-bottom: 1px dotted $keyword-color;
+
+    &::before {
+      color: $keyword-color !important;
+    }
+  }
+}

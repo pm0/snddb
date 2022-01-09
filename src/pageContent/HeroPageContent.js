@@ -17,7 +17,7 @@ const HeroPageContent = (props) => {
       <Heading size={4} subtitle>
         Level {level}
       </Heading>
-      <DieNet faces={faces} spell={spell} type={type} />
+      <DieNet faces={faces} spell={spell} heroType={type} />
     </BodyLayout>
   );
 };

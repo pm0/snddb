@@ -4,16 +4,24 @@ import GraphQLErrorList from '../components/GraphQLErrorList';
 import HeroPageContent from '../pageContent/HeroPageContent';
 import SEO from '../components/SEO';
 import PageLayout from '../containers/PageLayout';
-import { mapEdgesToNodes, addFacesEffectDescription } from '../lib/helpers';
+import { formatFacesEffectsDescription } from '../lib/helpers';
 
 export const query = graphql`
-  query HeroPageTemplateQuery($id: String!, $effectIds: [String!]!) {
-    hero: heroJson(jsonId: { eq: $id }) {
+  query HeroPageTemplateQuery($id: String!) {
+    hero(jsonId: { eq: $id }) {
       name
       level
       faces {
-        type
         value
+        effect {
+          description
+          jsonId
+          hasValue
+          references {
+            description
+            jsonId
+          }
+        }
       }
       spell {
         name
@@ -21,15 +29,6 @@ export const query = graphql`
         description
       }
       type
-    }
-    effects: allEffectJson(filter: { jsonId: { in: $effectIds } }) {
-      edges {
-        node {
-          jsonId
-          description
-          hasValue
-        }
-      }
     }
   }
 `;
@@ -42,9 +41,8 @@ const HeroPageTemplate = (props) => {
   } = pageContext;
 
   const hero = data && data.hero;
-  const effects = (data || {}).effects ? mapEdgesToNodes(data.effects) : [];
-  if (hero && effects.length > 0) {
-    addFacesEffectDescription(hero.faces, effects);
+  if (hero) {
+    formatFacesEffectsDescription(hero.faces);
   }
 
   return (

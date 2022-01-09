@@ -3,12 +3,18 @@ export function mapEdgesToNodes(data) {
   return data.edges.map((edge) => edge.node);
 }
 
-export function addFacesEffectDescription(faces, effects) {
+export function formatFacesEffectsDescription(faces) {
   faces.forEach((face) => {
     if (face) {
-      const effect = effects.find((e) => e.jsonId === face.type);
-      if (effect) {
-        face.description = effect.description.replace('{value}', face.value);
+      if (face.effect.hasValue) {
+        face.effect.description = face.effect.description.replace('{value}', face.value);
+      }
+      if (face.effect.references) {
+        face.effect.references.forEach((ref) => {
+          const oldSubstr = `class="keyword-${ref.jsonId}"`;
+          const newSubstr = `class="keyword-${ref.jsonId}" data-tooltip="${ref.jsonId}: ${ref.description}"`;
+          face.effect.description = face.effect.description.replace(oldSubstr, newSubstr);
+        });
       }
     }
   });

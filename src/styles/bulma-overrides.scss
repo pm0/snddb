@@ -70,7 +70,7 @@ $scheme-invert-main: $white;
 $scheme-invert-main-bis: $white-bis;
 $scheme-invert-main-ter: $white-ter;
 
-$background: $grey-darker;
+$body-background-color: $scheme-main-ter;
 
 $text: $white-ter;
 $text-light: $grey-lightest;
@@ -83,10 +83,10 @@ $link-hover: $white-ter;
 $navbar-height: 3rem;
 $navbar-item-img-max-height: 3rem;
 $navbar-padding-horizontal: 4rem;
-$navbar-background-color: $black-bis;
+$navbar-background-color: $scheme-main-bis;
 
 $footer-padding: 2rem 1rem 3rem;
-$footer-background-color: $black-bis;
+$footer-background-color: $scheme-main-bis;
 
 @each $name, $snd-hero-color in $heroes-colors {
   .snd-hero-link-#{$name} {
@@ -109,5 +109,6 @@ $footer-background-color: $black-bis;
 
   .snd-hero-die-face-#{$name} {
     border-color: $snd-hero-color;
+    background-color: $scheme-main-bis;
   }
 }

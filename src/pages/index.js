@@ -8,7 +8,7 @@ import { mapEdgesToNodes } from '../lib/helpers';
 
 export const query = graphql`
   query IndexPageQuery {
-    heroes: allHeroJson {
+    heroes: allHero {
       edges {
         node {
           type

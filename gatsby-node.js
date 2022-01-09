@@ -4,25 +4,32 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const typeDefs = `
+    type hero implements Node {
+      faces: [heroFace]!
+    }
+    type heroFace {
+      effect: effect! @link(by: "jsonId")
+    }
+    type effect implements Node {
+      jsonId: String!
+      references: [keyword!] @link(by: "jsonId")
+    }
+    type keyword implements Node {
+      jsonId: String!
+    }
+  `;
+  actions.createTypes(typeDefs);
+};
+
 async function createHeroPages(graphql, actions) {
   const { createPage } = actions;
   const result = await graphql(`
     {
-      allHeroJson {
+      allHero {
         edges {
           node {
-            faces {
-              type
-              value
-            }
-            spell {
-              name
-              cost
-              description
-            }
-            type
-            name
-            level
             jsonId
           }
         }
@@ -32,7 +39,7 @@ async function createHeroPages(graphql, actions) {
 
   if (result.errors) throw result.errors;
 
-  const heroEdges = (result.data.allHeroJson || {}).edges || [];
+  const heroEdges = (result.data.allHero || {}).edges || [];
 
   heroEdges.forEach((edge) => {
     const id = edge.node.jsonId;
@@ -43,9 +50,6 @@ async function createHeroPages(graphql, actions) {
       component: require.resolve('./src/templates/HeroPageTemplate.js'),
       context: {
         id,
-        effectIds: edge.node.faces
-          .map((face) => (face ? face.type : ''))
-          .filter((val, idx, self) => val && self.indexOf(val) === idx),
       },
     });
   });
