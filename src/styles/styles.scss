@@ -63,4 +63,11 @@ a:hover {
     border-color: $snd-hero-color;
     background-color: $scheme-main-bis;
   }
+
+  .spell-#{$name} {
+    border: 2px solid $snd-hero-color;
+  }
+  .spell-divider-#{$name} {
+    border-bottom: 2px solid $snd-hero-color;
+  }
 }

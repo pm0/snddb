@@ -19,7 +19,7 @@ const ItemsSection = (props) => {
       {heading}
       <div className="is-flex">
         {items.map((item) => (
-          <Link key={item.jsonId} to={`/item/${item.jsonId}/`} className="snd-hero-link-defender">
+          <Link key={item.jsonId} to={`/item/${item.jsonId}/`} className="snd-hero-link-item">
             {item.name}
           </Link>
         ))}

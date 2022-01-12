@@ -54,15 +54,19 @@ $keywords-colors: (
   $color: list.nth($keyword-color, 1);
   $background-color: list.nth($keyword-color, 2);
 
-  span[data-tooltip].keyword-#{$name} {
+  .keyword-#{$name} {
     font-weight: bold;
     color: $color;
-    border-bottom: 1px dotted $color;
 
     &::before {
       color: $color !important;
       background: $background-color !important;
       border: 1px solid $color !important;
     }
+  }
+
+  span[data-tooltip].keyword-#{$name} {
+    composes: keyword-#{$name};
+    border-bottom: 1px dotted $color;
   }
 }

@@ -1,0 +1,34 @@
+@import '../styles/bulma-overrides.scss';
+
+.root {
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.costPips {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.costPip {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid $adept;
+  background-color: $adept;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.description {
+  padding: 0.25rem 0.5rem;
+}
