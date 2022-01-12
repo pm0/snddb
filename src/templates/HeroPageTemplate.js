@@ -4,7 +4,7 @@ import GraphQLErrorList from '../components/GraphQLErrorList';
 import HeroPageContent from '../pageContent/HeroPageContent';
 import SEO from '../components/SEO';
 import PageLayout from '../containers/PageLayout';
-import { formatFacesEffectsDescription } from '../lib/helpers';
+import { formatHero } from '../lib/helpers';
 
 export const query = graphql`
   query HeroPageTemplateQuery($id: String!) {
@@ -12,6 +12,7 @@ export const query = graphql`
       name
       level
       hp
+      type
       faces {
         value
         effect {
@@ -25,11 +26,14 @@ export const query = graphql`
         }
       }
       spell {
-        name
         cost
         description
+        name
+        references {
+          jsonId
+          description
+        }
       }
-      type
     }
   }
 `;
@@ -43,7 +47,7 @@ const HeroPageTemplate = (props) => {
 
   const hero = data && data.hero;
   if (hero) {
-    formatFacesEffectsDescription(hero.faces);
+    formatHero(hero);
   }
 
   return (

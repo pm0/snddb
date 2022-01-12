@@ -12,9 +12,5 @@
     { "effect": "damage-self-heal", "value": 2 },
     { "effect": "heal", "value": 5 }
   ],
-  "spell": {
-    "name": "Infuse",
-    "cost": 2,
-    "description": "Heal 2 to all allies"
-  }
+  "spell": "infuse"
 }

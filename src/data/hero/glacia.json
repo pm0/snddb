@@ -1,0 +1,16 @@
+{
+  "id": "glacia",
+  "name": "Glacia",
+  "type": "adept",
+  "level": 2,
+  "hp": 9,
+  "faces": [
+    { "effect": "shield-mana", "value": 1 },
+    { "effect": "mana-pain", "value": 3 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "damage-self-heal-single", "value": 3 },
+    null,
+    { "effect": "shield-mana", "value": 1 }
+  ],
+  "spell": "chill"
+}

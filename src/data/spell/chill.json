@@ -1,0 +1,7 @@
+{
+  "id": "chill",
+  "name": "Chill",
+  "cost": 3,
+  "description": "2 damage<br /><span class=\"keyword-weaken\">weaken</span>, <span class=\"keyword-single-cast\">single-cast</span>",
+  "references": ["weaken", "single-cast"]
+}

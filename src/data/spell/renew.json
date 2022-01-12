@@ -1,0 +1,6 @@
+{
+  "id": "renew",
+  "name": "Renew",
+  "cost": 2,
+  "description": "Set a hero to 6 hp"
+}

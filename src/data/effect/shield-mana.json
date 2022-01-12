@@ -1,0 +1,5 @@
+{
+  "id": "shield-mana",
+  "hasValue": true,
+  "description": "Shield {value} and +{value} mana"
+}

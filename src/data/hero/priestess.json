@@ -12,9 +12,5 @@
     { "effect": "heal-all", "value": 1 },
     { "effect": "heal-mana", "value": 1 }
   ],
-  "spell": {
-    "name": "Flash",
-    "cost": 2,
-    "description": "Heal 1 and shield 1 to all dying heroes"
-  }
+  "spell": "flash"
 }

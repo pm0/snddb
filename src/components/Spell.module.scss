@@ -1,14 +1,17 @@
 @import '../styles/bulma-overrides.scss';
 
+$padding: 0.25rem 1rem;
+
 .root {
   display: inline-block;
   border-radius: 0.5rem;
+  background-color: $scheme-main-bis;
 }
 
 .titleWrapper {
   display: flex;
   justify-content: center;
-  padding: 0.25rem 0.5rem;
+  padding: $padding;
 }
 
 .costPips {
@@ -30,5 +33,6 @@
 }
 
 .description {
-  padding: 0.25rem 0.5rem;
+  padding: $padding;
+  text-align: center;
 }

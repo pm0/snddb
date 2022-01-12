@@ -7,6 +7,10 @@
     width: $die-size;
     height: $die-size;
   }
+
+  .spellWrapper {
+    width: $die-size * 2;
+  }
 }
 
 @include tablet {
@@ -15,6 +19,10 @@
   .face {
     width: $die-size;
     height: $die-size;
+  }
+
+  .spellWrapper {
+    width: $die-size * 2;
   }
 }
 
@@ -59,30 +67,6 @@ $inner-padding-horizontal: 12px;
 $inner-padding-vertical-mobile: 4px;
 $inner-padding-horizontal-mobile: 6px;
 
-.faceSpell {
-  composes: face;
-  padding: $face-border 0 0 $face-border;
-
-  > div {
-    width: 100%;
-    height: 100%;
-    border-width: $face-border;
-    border-style: dashed;
-    padding-top: $inner-padding-vertical - $face-border;
-    padding-right: $inner-padding-horizontal;
-    padding-bottom: $inner-padding-vertical;
-    padding-left: $inner-padding-horizontal - $face-border;
-
-    @include mobile {
-      padding-top: $inner-padding-vertical-mobile - $face-border;
-      padding-right: $inner-padding-horizontal-mobile;
-      padding-bottom: $inner-padding-vertical-mobile;
-      padding-left: $inner-padding-horizontal-mobile - $face-border;
-      font-size: 0.75rem;
-    }
-  }
-}
-
 .inner {
   height: 100%;
   padding: $inner-padding-vertical $inner-padding-horizontal;
@@ -90,5 +74,13 @@ $inner-padding-horizontal-mobile: 6px;
   @include mobile {
     padding: $inner-padding-vertical-mobile $inner-padding-horizontal-mobile;
     font-size: 0.75rem;
+  }
+}
+
+.spellWrapper {
+  padding: 1rem;
+
+  > div {
+    display: block;
   }
 }

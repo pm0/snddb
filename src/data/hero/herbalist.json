@@ -12,9 +12,5 @@
     null,
     { "effect": "heal-regen", "value": 1 }
   ],
-  "spell": {
-    "name": "Vine",
-    "cost": 1,
-    "description": "1 damage or heal 1"
-  }
+  "spell": "vine"
 }

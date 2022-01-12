@@ -12,9 +12,5 @@
     null,
     { "effect": "heal-cleave", "value": 2 }
   ],
-  "spell": {
-    "name": "Renew",
-    "cost": 2,
-    "description": "Set a hero to 6 hp"
-  }
+  "spell": "renew"
 }

@@ -12,9 +12,5 @@
     { "effect": "mana", "value": 1 },
     { "effect": "heal", "value": 3 }
   ],
-  "spell": {
-    "name": "Restore",
-    "cost": 2,
-    "description": "Heal 1 to all allies"
-  }
+  "spell": "restore"
 }

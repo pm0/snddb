@@ -8,6 +8,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
     type hero implements Node {
       faces: [heroFace]!
+      spell: spell @link(by: "jsonId")
     }
     type heroFace {
       effect: effect! @link(by: "jsonId")
@@ -22,7 +23,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type spell implements Node {
       jsonId: String!
-      references: [keyword!] @link(by: "jsonId")
+      references: [keyword] @link(by: "jsonId")
     }
     type keyword implements Node {
       jsonId: String!

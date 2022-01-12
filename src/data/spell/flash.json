@@ -1,0 +1,6 @@
+{
+  "id": "flash",
+  "name": "Flash",
+  "cost": 2,
+  "description": "Heal 1 and shield 1 to all dying heroes"
+}

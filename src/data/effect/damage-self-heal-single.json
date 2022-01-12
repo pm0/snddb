@@ -1,0 +1,6 @@
+{
+  "id": "damage-self-heal-single",
+  "hasValue": true,
+  "description": "{value} damage and self-heal {value}<br/><span class=\"keyword-single-use\">single-use</span>",
+  "references": ["single-use"]
+}

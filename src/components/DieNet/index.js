@@ -1,7 +1,6 @@
 import React from 'react';
-//import { ... } from 'react-bulma-components';
+import Spell from '../../components/Spell';
 import Face from './Face';
-import FaceSpell from './FaceSpell';
 import FacePlaceholder from './FacePlaceholder';
 import * as styles from './DieNet.module.scss';
 
@@ -22,11 +21,14 @@ const DieNet = ({ faces, spell, heroType }) => {
         <Face face={faces[4]} heroType={heroType} />
       </div>
 
-      <div className="is-flex">
+      <div className="is-flex is-align-items-center">
         <FacePlaceholder />
         <Face face={faces[5]} heroType={heroType} />
-        <FaceSpell spell={spell} />
-        <FacePlaceholder />
+        {spell && (
+          <div className={styles.spellWrapper}>
+            <Spell {...spell} type={heroType} />
+          </div>
+        )}
       </div>
     </div>
   );

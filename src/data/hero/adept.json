@@ -12,9 +12,5 @@
     null,
     { "effect": "mana", "value": 1 }
   ],
-  "spell": {
-    "name": "Slice",
-    "cost": 3,
-    "description": "1 damage to all enemies"
-  }
+  "spell": "slice"
 }

@@ -11,8 +11,8 @@ export function formatDescriptionFromReferences(field, tooltipClass = 'has-toolt
   });
 }
 
-export function formatFacesEffectsDescription(faces) {
-  faces.forEach((face, idx) => {
+export function formatHero(hero) {
+  hero.faces.forEach((face, idx) => {
     if (face) {
       if (face.effect.hasValue) {
         face.effect.description = face.effect.description.replaceAll('{value}', face.value);
@@ -23,4 +23,7 @@ export function formatFacesEffectsDescription(faces) {
       }
     }
   });
+  if (hero.spell && hero.spell.references) {
+    formatDescriptionFromReferences(hero.spell);
+  }
 }

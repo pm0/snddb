@@ -1,0 +1,6 @@
+{
+  "id": "mana-pain",
+  "hasValue": true,
+  "description": "+{value} mana<br/><span class=\"keyword-pain\">pain</span>",
+  "references": ["pain"]
+}

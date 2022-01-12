@@ -1,0 +1,6 @@
+{
+  "id": "restore",
+  "name": "Restore",
+  "cost": 2,
+  "description": "Heal 1 to all allies"
+}

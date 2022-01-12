@@ -1,0 +1,6 @@
+{
+  "id": "balance",
+  "name": "Balance",
+  "cost": 3,
+  "description": "1 damage to all enemies and heal 1 to all allies"
+}
