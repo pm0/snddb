@@ -2,5 +2,6 @@
   "id": "reagents",
   "name": "Reagents",
   "level": 1,
-  "description": "Replace the two right sides with 'blank' and 'Heal 1, regen'"
+  "description": "Replace the two right sides with 'blank' and 'Heal 1, <span class=\"keyword-regen\">regen</span>'",
+  "references": ["regen"]
 }

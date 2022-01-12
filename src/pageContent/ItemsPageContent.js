@@ -1,17 +1,17 @@
 import React from 'react';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import BodyLayout from '../containers/BodyLayout';
-import HeroesSection from '../components/HeroesSection';
+import ItemsSection from '../components/ItemsSection';
 
-const HeroesPageContent = (props) => {
-  const { heroes, crumbs } = props;
+const ItemsPageContent = (props) => {
+  const { items, crumbs } = props;
 
   return (
     <BodyLayout>
       <Breadcrumb crumbs={crumbs} crumbSeparator=" / " crumbLabel={name} />
-      <HeroesSection heroes={heroes} headingSize={2} />
+      <ItemsSection items={items} headingSize={2} />
     </BodyLayout>
   );
 };
 
-export default HeroesPageContent;
+export default ItemsPageContent;

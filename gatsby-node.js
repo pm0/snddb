@@ -16,6 +16,14 @@ exports.createSchemaCustomization = ({ actions }) => {
       jsonId: String!
       references: [keyword!] @link(by: "jsonId")
     }
+    type item implements Node {
+      references: [keyword!] @link(by: "jsonId")
+      spell: spell @link(by: "jsonId")
+    }
+    type spell implements Node {
+      jsonId: String!
+      references: [keyword!] @link(by: "jsonId")
+    }
     type keyword implements Node {
       jsonId: String!
     }
@@ -55,6 +63,39 @@ async function createHeroPages(graphql, actions) {
   });
 }
 
+async function createItemPages(graphql, actions) {
+  const { createPage } = actions;
+  const result = await graphql(`
+    {
+      allItem {
+        edges {
+          node {
+            jsonId
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) throw result.errors;
+
+  const itemEdges = (result.data.allItem || {}).edges || [];
+
+  itemEdges.forEach((edge) => {
+    const id = edge.node.jsonId;
+    const path = `/item/${id}/`;
+
+    createPage({
+      path,
+      component: require.resolve('./src/templates/ItemPageTemplate.js'),
+      context: {
+        id,
+      },
+    });
+  });
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createHeroPages(graphql, actions);
+  await createItemPages(graphql, actions);
 };

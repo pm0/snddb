@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import './bulma-overrides.scss';
 @import '~bulma/bulma.sass';
 @import './bulma-tooltip-overrides.scss';
@@ -37,4 +38,29 @@ a:hover {
 }
 .hero-background.is-transparent {
   opacity: 0.5;
+}
+
+@each $name, $snd-hero-color in $heroes-colors {
+  .snd-hero-link-#{$name} {
+    border: 2px solid color.scale($snd-hero-color, $blackness: 20%);
+    border-radius: 2px;
+    background-color: $snd-hero-color;
+    color: $white-ter;
+    font-size: $size-5;
+    padding: 0.5rem 1rem;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .snd-hero-title-#{$name} {
+    text-decoration: solid underline $snd-hero-color 4px;
+    text-underline-offset: 0.1rem;
+  }
+
+  .snd-hero-die-face-#{$name} {
+    border-color: $snd-hero-color;
+    background-color: $scheme-main-bis;
+  }
 }

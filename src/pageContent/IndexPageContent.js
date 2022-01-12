@@ -2,9 +2,10 @@ import React from 'react';
 import { Hero, Heading } from 'react-bulma-components';
 import BodyLayout from '../containers/BodyLayout';
 import HeroesSection from '../components/HeroesSection';
+import ItemsSection from '../components/ItemsSection';
 
 const IndexPageContent = (props) => {
-  const { heroes } = props;
+  const { heroes, items } = props;
 
   return (
     <>
@@ -22,6 +23,8 @@ const IndexPageContent = (props) => {
       </Hero>
       <BodyLayout>
         <HeroesSection heroes={heroes} headingSize={3} linkTitle />
+        <div className="mt-4" />
+        <ItemsSection items={items} headingSize={3} linkTitle />
       </BodyLayout>
     </>
   );

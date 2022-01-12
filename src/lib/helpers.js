@@ -3,6 +3,14 @@ export function mapEdgesToNodes(data) {
   return data.edges.map((edge) => edge.node);
 }
 
+export function formatDescriptionFromReferences(field, tooltipClass = 'has-tooltip-top') {
+  field.references.forEach((ref) => {
+    const oldSubstr = `class="keyword-${ref.jsonId}"`;
+    const newSubstr = `class="keyword-${ref.jsonId} ${tooltipClass}" data-tooltip="${ref.jsonId}: ${ref.description}"`;
+    field.description = field.description.replace(oldSubstr, newSubstr);
+  });
+}
+
 export function formatFacesEffectsDescription(faces) {
   faces.forEach((face, idx) => {
     if (face) {
@@ -11,11 +19,7 @@ export function formatFacesEffectsDescription(faces) {
       }
       if (face.effect.references) {
         const tooltipClass = idx === 1 ? 'has-tooltip-right' : 'has-tooltip-top';
-        face.effect.references.forEach((ref) => {
-          const oldSubstr = `class="keyword-${ref.jsonId}"`;
-          const newSubstr = `class="keyword-${ref.jsonId} ${tooltipClass}" data-tooltip="${ref.jsonId}: ${ref.description}"`;
-          face.effect.description = face.effect.description.replace(oldSubstr, newSubstr);
-        });
+        formatDescriptionFromReferences(face.effect, tooltipClass);
       }
     }
   });

@@ -1,0 +1,7 @@
+{
+  "id": "herbal-spellbook",
+  "name": "Herbal Spellbook",
+  "level": 3,
+  "description": "Learn a new <span class=\"keyword-spell\">spell</span>",
+  "spell": "poultice"
+}

@@ -43,6 +43,10 @@ module.exports = {
             pathname: '/hero',
             crumbLabel: 'Heroes',
           },
+          {
+            pathname: '/item',
+            crumbLabel: 'Items',
+          },
         ],
       },
     },

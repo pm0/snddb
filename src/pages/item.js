@@ -2,23 +2,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import GraphQLErrorList from '../components/GraphQLErrorList';
 import SEO from '../components/SEO';
-import IndexPageContent from '../pageContent/IndexPageContent';
+import ItemsPageContent from '../pageContent/ItemsPageContent';
 import PageLayout from '../containers/PageLayout';
 import { mapEdgesToNodes } from '../lib/helpers';
 
 export const query = graphql`
-  query IndexPageQuery {
-    heroes: allHero {
-      edges {
-        node {
-          type
-          name
-          level
-          type
-          jsonId
-        }
-      }
-    }
+  query ItemPageQuery {
     items: allItem {
       edges {
         node {
@@ -31,7 +20,13 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = ({ data, errors }) => {
+const ItemsPage = (props) => {
+  const { data, pageContext, errors } = props;
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+
   if (errors) {
     return (
       <PageLayout>
@@ -40,15 +35,14 @@ const IndexPage = ({ data, errors }) => {
     );
   }
 
-  const heroes = (data || {}).heroes ? mapEdgesToNodes(data.heroes) : [];
   const items = (data || {}).items ? mapEdgesToNodes(data.items) : [];
 
   return (
     <PageLayout>
-      <SEO title="Slice &amp; Dice DB" />
-      <IndexPageContent heroes={heroes} items={items} />
+      <SEO title="Items" />
+      <ItemsPageContent items={items} crumbs={crumbs} />
     </PageLayout>
   );
 };
 
-export default IndexPage;
+export default ItemsPage;

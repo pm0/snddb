@@ -1,4 +1,3 @@
-@use 'sass:color';
 @import '~bulma/sass/utilities/functions.sass';
 
 $adept: rgb(33, 124, 145);
@@ -87,28 +86,3 @@ $navbar-background-color: $scheme-main-bis;
 
 $footer-padding: 2rem 1rem 3rem;
 $footer-background-color: $scheme-main-bis;
-
-@each $name, $snd-hero-color in $heroes-colors {
-  .snd-hero-link-#{$name} {
-    border: 2px solid color.scale($snd-hero-color, $blackness: 20%);
-    border-radius: 2px;
-    background-color: $snd-hero-color;
-    color: $white-ter;
-    font-size: $size-5;
-    padding: 0.5rem 1rem;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-  }
-
-  .snd-hero-title-#{$name} {
-    text-decoration: solid underline $snd-hero-color 4px;
-    text-underline-offset: 0.1rem;
-  }
-
-  .snd-hero-die-face-#{$name} {
-    border-color: $snd-hero-color;
-    background-color: $scheme-main-bis;
-  }
-}

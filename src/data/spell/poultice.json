@@ -1,0 +1,7 @@
+{
+  "id": "poultice",
+  "name": "Poultice",
+  "cost": 2,
+  "description": "<span class=\"keyword-cleanse\">cleanse</span>, <span class=\"keyword-single-cast\">single-cast</span>",
+  "references": ["cleanse", "single-cast"]
+}
