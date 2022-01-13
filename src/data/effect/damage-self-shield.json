@@ -1,0 +1,5 @@
+{
+  "id": "damage-self-shield",
+  "hasValue": true,
+  "description": "{value} damage and self-shield {value}"
+}

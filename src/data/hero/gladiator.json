@@ -1,0 +1,16 @@
+{
+  "id": "gladiator",
+  "name": "Gladiator",
+  "type": "warrior",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    { "effect": "damage-self-shield", "value": 2 },
+    { "effect": "damage-engage", "value": 2 },
+    { "effect": "damage-engage", "value": 1 },
+    { "effect": "shield", "value": 2 },
+    null,
+    { "effect": "damage-self-shield", "value": 2 }
+  ],
+  "order": 4
+}

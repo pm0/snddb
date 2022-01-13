@@ -1,0 +1,16 @@
+{
+  "id": "soldier",
+  "name": "Soldier",
+  "type": "warrior",
+  "level": 2,
+  "hp": 9,
+  "faces": [
+    { "effect": "damage", "value": 2 },
+    { "effect": "damage", "value": 3 },
+    { "effect": "damage", "value": 3 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "damage", "value": 2 }
+  ],
+  "order": 6
+}

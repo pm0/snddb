@@ -1,0 +1,6 @@
+{
+  "id": "damage-poison",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-poison\">poison</span>",
+  "references": ["poison"]
+}

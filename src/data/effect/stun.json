@@ -1,0 +1,5 @@
+{
+  "id": "stun",
+  "hasValue": false,
+  "description": "Stun an enemy with equal or less hp than you"
+}

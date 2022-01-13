@@ -1,0 +1,5 @@
+{
+  "id": "damage-all",
+  "hasValue": true,
+  "description": "{value} damage to all enemies"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "knight",
+  "name": "Knight",
+  "type": "warrior",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "damage", "value": 2 },
+    { "effect": "damage-steel", "value": 1 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "shield-steel", "value": 2 },
+    { "effect": "shield-steel", "value": 2 },
+    { "effect": "damage", "value": 2 }
+  ],
+  "order": 7
+}

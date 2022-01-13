@@ -1,0 +1,6 @@
+{
+  "id": "damage-engage",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-engage\">engage</span>",
+  "references": ["engage"]
+}

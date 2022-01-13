@@ -1,0 +1,16 @@
+{
+  "id": "whirl",
+  "name": "Whirl",
+  "type": "warrior",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    { "effect": "damage-cleave", "value": 1 },
+    { "effect": "damage-all", "value": 1 },
+    { "effect": "damage", "value": 3 },
+    { "effect": "shield-cleave", "value": 1 },
+    null,
+    { "effect": "damage-cleave", "value": 1 }
+  ],
+  "order": 2
+}

@@ -1,0 +1,6 @@
+{
+  "id": "damage-deathwish",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-deathwish\">deathwish</span>",
+  "references": ["deathwish"]
+}

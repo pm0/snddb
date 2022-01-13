@@ -1,0 +1,16 @@
+{
+  "id": "collector",
+  "name": "Collector",
+  "type": "warrior",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "ranged", "value": 2 },
+    { "effect": "damage-heavy", "value": 3 },
+    { "effect": "damage-cleave", "value": 1 },
+    { "effect": "damage-poison", "value": 1 },
+    { "effect": "damage-engage", "value": 1 },
+    { "effect": "damage-self-shield", "value": 2 }
+  ],
+  "order": 3
+}

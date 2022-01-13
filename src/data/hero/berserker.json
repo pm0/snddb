@@ -1,0 +1,16 @@
+{
+  "id": "berserker",
+  "name": "Berserker",
+  "type": "warrior",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "damage-pain", "value": 4 },
+    { "effect": "damage-deathwish", "value": 3 },
+    { "effect": "damage-deathwish", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    null,
+    { "effect": "damage-pain", "value": 4 }
+  ],
+  "order": 5
+}
