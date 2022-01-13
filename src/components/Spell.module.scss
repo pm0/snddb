@@ -1,11 +1,15 @@
 @import '../styles/bulma-overrides.scss';
+@import '~bulma/sass/utilities/_all.sass';
 
 $padding: 0.25rem 1rem;
 
 .root {
-  display: inline-block;
   border-radius: 0.5rem;
   background-color: $scheme-main-bis;
+
+  @include mobile {
+    font-size: $size-7;
+  }
 }
 
 .titleWrapper {
@@ -29,6 +33,15 @@ $padding: 0.25rem 1rem;
 
   &:not(:last-child) {
     margin-right: 4px;
+  }
+
+  @include mobile {
+    width: 9px;
+    height: 9px;
+
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
   }
 }
 

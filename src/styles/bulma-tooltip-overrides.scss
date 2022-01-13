@@ -1,4 +1,5 @@
 @use 'sass:list';
+@import '~bulma/sass/utilities/_all.sass';
 
 $tooltip-background-opacity: 1;
 $tooltip-font-size: $size-6;
@@ -63,6 +64,12 @@ $keywords-colors: (
       color: $color !important;
       background: $background-color !important;
       border: 1px solid $color !important;
+
+      @include mobile {
+        width: 200px;
+        font-size: 0.75rem !important;
+        white-space: inherit !important;
+      }
     }
   }
 

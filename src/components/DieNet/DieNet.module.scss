@@ -43,6 +43,9 @@ $face-offset: -$face-border;
 
 .faceShown {
   composes: face;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   border-width: $face-border;
   border-style: solid;
 }
@@ -64,7 +67,7 @@ $face-offset: -$face-border;
   composes: face;
 }
 
-$inner-padding-vertical: 8px;
+$inner-padding-vertical: 12px;
 $inner-padding-horizontal: 12px;
 $inner-padding-vertical-mobile: 4px;
 $inner-padding-horizontal-mobile: 6px;
@@ -75,14 +78,18 @@ $inner-padding-horizontal-mobile: 6px;
 
   @include mobile {
     padding: $inner-padding-vertical-mobile $inner-padding-horizontal-mobile;
-    font-size: 0.75rem;
+    font-size: $size-7;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
 .spellWrapper {
   padding: 1rem;
 
-  > div {
-    display: block;
+  @include mobile {
+    padding: 0.75rem;
   }
 }

@@ -24,10 +24,15 @@ const DieNet = ({ faces, spell, heroType }) => {
       <div className="is-flex is-align-items-center">
         <FacePlaceholder />
         <Face face={faces[5]} heroType={heroType} />
-        {spell && (
+        {spell ? (
           <div className={styles.spellWrapper}>
             <Spell {...spell} type={heroType} />
           </div>
+        ) : (
+          <>
+            <FacePlaceholder />
+            <FacePlaceholder />
+          </>
         )}
       </div>
     </div>

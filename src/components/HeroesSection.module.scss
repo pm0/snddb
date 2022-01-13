@@ -1,0 +1,26 @@
+@import '~bulma/sass/utilities/_all.sass';
+
+.levelSection {
+  margin-bottom: 1.5rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.classRow {
+  @include mobile {
+    margin-bottom: 0.5rem;
+  }
+}
+
+a:global([class^='snd-hero-link-']) {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  @include mobile {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 0.5rem;
+  }
+}
