@@ -1,0 +1,16 @@
+{
+  "id": "cleric",
+  "name": "Cleric",
+  "type": "defender",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    { "effect": "mana", "value": 3 },
+    { "effect": "heal-shield", "value": 2 },
+    { "effect": "heal-shield", "value": 2 },
+    { "effect": "shield-cleanse", "value": 2 },
+    null,
+    { "effect": "mana", "value": 3 }
+  ],
+  "order": 3
+}

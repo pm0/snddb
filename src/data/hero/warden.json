@@ -1,0 +1,16 @@
+{
+  "id": "warden",
+  "name": "Warden",
+  "type": "defender",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "damage", "value": 2 },
+    { "effect": "shield", "value": 4 },
+    { "effect": "shield", "value": 3 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 1 },
+    { "effect": "damage", "value": 2 }
+  ],
+  "order": 1
+}

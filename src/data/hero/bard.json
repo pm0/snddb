@@ -1,0 +1,16 @@
+{
+  "id": "bard",
+  "name": "Bard",
+  "type": "defender",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "shield", "value": 3 },
+    { "effect": "shield-all", "value": 1 },
+    { "effect": "reroll-cantrip", "value": 1 },
+    { "effect": "mana-single-use", "value": 2 },
+    null,
+    { "effect": "shield", "value": 3 }
+  ],
+  "order": 2
+}

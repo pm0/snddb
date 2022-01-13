@@ -1,0 +1,5 @@
+{
+  "id": "boost-ally-damage-shields",
+  "hasValue": true,
+  "description": "Target ally gains +{value} to all damage and shield sides this turn"
+}

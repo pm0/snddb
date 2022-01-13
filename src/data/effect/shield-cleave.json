@@ -1,0 +1,6 @@
+{
+  "id": "shield-cleave",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-cleave\">cleave</span>",
+  "references": ["cleave"]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "damage-heavy",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-heavy\">heavy</span>",
+  "references": ["heavy"]
+}

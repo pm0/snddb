@@ -1,0 +1,6 @@
+{
+  "id": "damage-cleave",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-cleave\">cleave</span>",
+  "references": ["cleave"]
+}

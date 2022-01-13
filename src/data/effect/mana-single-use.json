@@ -1,0 +1,6 @@
+{
+  "id": "mana-single-use",
+  "hasValue": true,
+  "description": "+{value} mana<br/><span class=\"keyword-single-use\">single-use</span>",
+  "references": ["single-use"]
+}

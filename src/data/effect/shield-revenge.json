@@ -1,0 +1,6 @@
+{
+  "id": "shield-revenge",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-revenge\">revenge</span>",
+  "references": ["revenge"]
+}

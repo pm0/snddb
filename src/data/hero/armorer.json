@@ -1,0 +1,16 @@
+{
+  "id": "armorer",
+  "name": "Armorer",
+  "type": "defender",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "boost-ally-damage-shields", "value": 1 },
+    { "effect": "damage-heavy", "value": 3 },
+    { "effect": "shield-steel", "value": 3 },
+    { "effect": "shield-steel", "value": 3 },
+    null,
+    { "effect": "boost-ally-damage-shields", "value": 1 }
+  ],
+  "order": 5
+}

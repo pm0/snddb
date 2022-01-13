@@ -1,0 +1,5 @@
+{
+  "id": "redirect-self-shield",
+  "hasValue": true,
+  "description": "Redirect all attacks from an ally to you and self-shield {value}"
+}

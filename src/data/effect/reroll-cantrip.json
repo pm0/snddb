@@ -1,0 +1,6 @@
+{
+  "id": "reroll-cantrip",
+  "hasValue": true,
+  "description": "Gain {value} reroll<br/><span class=\"keyword-cantrip\">cantrip</span>",
+  "references": ["cantrip"]
+}

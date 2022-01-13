@@ -1,0 +1,6 @@
+{
+  "id": "shield-engage",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-engage\">engage</span>",
+  "references": ["engage"]
+}
