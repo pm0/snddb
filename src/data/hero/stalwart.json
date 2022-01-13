@@ -1,0 +1,16 @@
+{
+  "id": "stalwart",
+  "name": "Stalwart",
+  "type": "defender",
+  "level": 3,
+  "hp": 9,
+  "faces": [
+    { "effect": "shield-cleave", "value": 2 },
+    { "effect": "shield", "value": 6 },
+    { "effect": "damage", "value": 3 },
+    { "effect": "shield-cleanse", "value": 2 },
+    { "effect": "shield-cleanse", "value": 1 },
+    { "effect": "shield-cleave", "value": 2 }
+  ],
+  "order": 1
+}

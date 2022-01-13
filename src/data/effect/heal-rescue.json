@@ -1,0 +1,6 @@
+{
+  "id": "heal-rescue",
+  "hasValue": true,
+  "description": "Heal {value}<br/><span class=\"keyword-rescue\">rescue</span>",
+  "references": ["rescue"]
+}

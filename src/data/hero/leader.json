@@ -1,0 +1,16 @@
+{
+  "id": "leader",
+  "name": "Leader",
+  "type": "warrior",
+  "level": 3,
+  "hp": 10,
+  "faces": [
+    { "effect": "damage", "value": 3 },
+    { "effect": "reuse-dice" },
+    { "effect": "damage-duplicate", "value": 2 },
+    { "effect": "boost-ally-damage-shields", "value": 2 },
+    null,
+    { "effect": "damage", "value": 3 }
+  ],
+  "order": 1
+}

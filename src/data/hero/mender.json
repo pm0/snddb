@@ -1,0 +1,17 @@
+{
+  "id": "mender",
+  "name": "Mender",
+  "type": "acolyte",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "heal-mana", "value": 2 },
+    { "effect": "heal-rescue", "value": 3 },
+    { "effect": "max-hp", "value": 4 },
+    { "effect": "max-hp", "value": 4 },
+    null,
+    { "effect": "heal-mana", "value": 2 }
+  ],
+  "spell": "soothe",
+  "order": 1
+}

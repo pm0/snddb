@@ -1,0 +1,6 @@
+{
+  "id": "damage-duplicate",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-duplicate\">duplicate</span>",
+  "references": ["duplicate"]
+}

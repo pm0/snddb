@@ -1,0 +1,7 @@
+{
+  "id": "soothe",
+  "name": "Soothe",
+  "cost": 4,
+  "description": "Heal 1 to all allies<br /><span class=\"keyword-regen\">regen</span>",
+  "references": ["regen"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ludus",
+  "name": "Ludus",
+  "type": "thief",
+  "level": 3,
+  "hp": 6,
+  "faces": [
+    { "effect": "damage", "value": 4 },
+    { "effect": "damage", "value": 6 },
+    { "effect": "damage", "value": 5 },
+    { "effect": "damage", "value": 1 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "damage", "value": 3 }
+  ],
+  "order": 1
+}

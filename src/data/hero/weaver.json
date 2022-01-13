@@ -1,0 +1,17 @@
+{
+  "id": "weaver",
+  "name": "Weaver",
+  "type": "adept",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "mana-single-use", "value": 3 },
+    { "effect": "double-mana" },
+    { "effect": "shield-mana", "value": 2 },
+    { "effect": "shield-mana", "value": 2 },
+    null,
+    { "effect": "mana-single-use", "value": 3 }
+  ],
+  "spell": "crush",
+  "order": 1
+}

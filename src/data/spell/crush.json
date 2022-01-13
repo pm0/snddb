@@ -1,0 +1,7 @@
+{
+  "id": "crush",
+  "name": "Crush",
+  "cost": 3,
+  "description": "3 damage<br /><span class=\"keyword-flanking\">flanking</span>",
+  "references": ["flanking"]
+}
