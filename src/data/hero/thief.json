@@ -11,5 +11,6 @@
     { "effect": "shield", "value": 1 },
     null,
     { "effect": "ranged", "value": 1 }
-  ]
+  ],
+  "order": 1
 }

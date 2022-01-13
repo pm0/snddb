@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Heading } from 'react-bulma-components';
 
-const customTypeSort = (a, b) => {
-  const order = ['adept', 'acolyte', 'defender', 'warrior', 'thief'];
-  if (order.indexOf(a.type) > order.indexOf(b.type)) {
+const heroTypeOrder = ['adept', 'acolyte', 'defender', 'warrior', 'thief'];
+
+const orderValueSort = (a, b) => {
+  if (a.order > b.order) {
     return 1;
   } else {
     return -1;
@@ -26,17 +27,29 @@ const HeroesSection = (props) => {
   return (
     <>
       {heading}
-      <div className="is-flex">
-        {heroes.sort(customTypeSort).map((hero) => (
-          <Link
-            key={hero.jsonId}
-            to={`/hero/${hero.jsonId}/`}
-            className={`snd-hero-link-${hero.type}`}
-          >
-            {hero.name}
-          </Link>
-        ))}
-      </div>
+      {[1, 2, 3].map((level) => (
+        <div key={level}>
+          <Heading size={4}>Level {level}</Heading>
+          <div className={`is-flex${level > 1 ? ' is-flex-direction-column' : ''}`}>
+            {heroTypeOrder.map((heroType) => (
+              <div key={`${heroType}-${level}`} className="is-flex">
+                {heroes
+                  .filter((hero) => hero.type === heroType && hero.level === level)
+                  .sort(orderValueSort)
+                  .map((hero) => (
+                    <Link
+                      key={hero.jsonId}
+                      to={`/hero/${hero.jsonId}/`}
+                      className={`snd-hero-link-${hero.type}`}
+                    >
+                      {hero.name}
+                    </Link>
+                  ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </>
   );
 };

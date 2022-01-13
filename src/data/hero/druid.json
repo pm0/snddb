@@ -12,5 +12,6 @@
     null,
     { "effect": "mana", "value": 2 }
   ],
-  "spell": "balance"
+  "spell": "balance",
+  "order": 3
 }

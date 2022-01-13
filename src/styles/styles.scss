@@ -48,10 +48,8 @@ a:hover {
     color: $white-ter;
     font-size: $size-5;
     padding: 0.5rem 1rem;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .snd-hero-title-#{$name} {

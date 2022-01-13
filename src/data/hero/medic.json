@@ -12,5 +12,6 @@
     null,
     { "effect": "heal-cleave", "value": 2 }
   ],
-  "spell": "renew"
+  "spell": "renew",
+  "order": 5
 }

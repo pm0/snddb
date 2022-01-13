@@ -12,5 +12,6 @@
     { "effect": "heal-all", "value": 1 },
     { "effect": "heal-mana", "value": 1 }
   ],
-  "spell": "flash"
+  "spell": "flash",
+  "order": 1
 }
