@@ -1,0 +1,5 @@
+{
+  "id": "damage-mana",
+  "hasValue": true,
+  "description": "{value} damage and +{value} mana"
+}

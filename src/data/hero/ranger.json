@@ -1,0 +1,16 @@
+{
+  "id": "ranger",
+  "name": "Ranger",
+  "type": "thief",
+  "level": 2,
+  "hp": 6,
+  "faces": [
+    { "effect": "ranged-cleave", "value": 1 },
+    { "effect": "ranged-engage", "value": 2 },
+    { "effect": "ranged", "value": 1 },
+    null,
+    null,
+    { "effect": "ranged-cleave", "value": 1 }
+  ],
+  "order": 2
+}

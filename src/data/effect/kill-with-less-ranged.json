@@ -1,0 +1,6 @@
+{
+  "id": "kill-with-less-ranged",
+  "hasValue": true,
+  "description": "Kill an enemy with {value} or less hp<br/><span class=\"keyword-ranged\">ranged</span>",
+  "references": ["ranged"]
+}

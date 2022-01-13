@@ -1,0 +1,16 @@
+{
+  "id": "gambler",
+  "name": "Gambler",
+  "type": "thief",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    null,
+    { "effect": "damage", "value": 5 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "damage", "value": 1 },
+    null,
+    null
+  ],
+  "order": 6
+}

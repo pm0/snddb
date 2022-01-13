@@ -1,0 +1,17 @@
+{
+  "id": "spellblade",
+  "name": "Spellblade",
+  "type": "thief",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    { "effect": "damage-mana", "value": 1 },
+    { "effect": "damage-poison", "value": 2 },
+    { "effect": "damage-engage", "value": 1 },
+    { "effect": "mana", "value": 1 },
+    { "effect": "mana", "value": 1 },
+    { "effect": "damage-mana", "value": 1 }
+  ],
+  "spell": "imbue",
+  "order": 1
+}

@@ -1,0 +1,16 @@
+{
+  "id": "trapper",
+  "name": "Trapper",
+  "type": "thief",
+  "level": 2,
+  "hp": 6,
+  "faces": [
+    { "effect": "ranged", "value": 2 },
+    { "effect": "kill-with-less-ranged", "value": 4 },
+    { "effect": "damage-growth", "value": 2 },
+    { "effect": "dodge" },
+    null,
+    { "effect": "ranged", "value": 2 }
+  ],
+  "order": 5
+}

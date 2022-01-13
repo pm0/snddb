@@ -1,0 +1,7 @@
+{
+  "id": "imbue",
+  "name": "Imbue",
+  "cost": 1,
+  "description": "Target ally gains +1 to all damage sides this turn<br /><span class=\"keyword-single-cast\">single-cast</span>",
+  "references": ["single-cast"]
+}

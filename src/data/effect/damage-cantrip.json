@@ -1,0 +1,6 @@
+{
+  "id": "damage-cantrip",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-cantrip\">cantrip</span>",
+  "references": ["cantrip"]
+}

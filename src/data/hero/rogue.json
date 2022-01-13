@@ -1,0 +1,16 @@
+{
+  "id": "rogue",
+  "name": "Rogue",
+  "type": "thief",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "damage-cantrip", "value": 1 },
+    { "effect": "ranged", "value": 2 },
+    { "effect": "damage-poison", "value": 1 },
+    { "effect": "damage-poison", "value": 1 },
+    { "effect": "dodge" },
+    { "effect": "damage-cantrip", "value": 1 }
+  ],
+  "order": 3
+}

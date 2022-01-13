@@ -1,0 +1,16 @@
+{
+  "id": "dabbler",
+  "name": "Dabbler",
+  "type": "thief",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "mana", "value": 2 },
+    { "effect": "damage", "value": 3 },
+    { "effect": "damage", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "shield", "value": 2 },
+    { "effect": "heal", "value": 4 }
+  ],
+  "order": 4
+}
