@@ -15,6 +15,7 @@ export const query = graphql`
           name
           level
           type
+          order
           jsonId
         }
       }
