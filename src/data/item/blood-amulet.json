@@ -1,0 +1,7 @@
+{
+  "id": "blood-amulet",
+  "name": "Blood Amulet",
+  "level": 6,
+  "description": "Add <span class=\"keyword-drain\">drain</span> to the two left sides",
+  "references": ["drain"]
+}

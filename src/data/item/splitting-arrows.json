@@ -1,0 +1,7 @@
+{
+  "id": "splitting-arrows",
+  "name": "Splitting Arrows",
+  "level": 9,
+  "description": "Add <span class=\"keyword-cleave\">cleave</span> to all <span class=\"keyword-ranged\">ranged</span> sides",
+  "references": ["cleave", "ranged"]
+}

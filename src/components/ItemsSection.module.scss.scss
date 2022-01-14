@@ -1,14 +1,6 @@
 @import '~bulma/sass/utilities/_all.sass';
 
-.levelSection {
-  margin-bottom: 1rem;
-
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
-.classRow {
+.levelRow {
   @include mobile {
     margin-bottom: 0.5rem;
   }

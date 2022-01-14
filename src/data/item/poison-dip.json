@@ -1,0 +1,7 @@
+{
+  "id": "poison-dip",
+  "name": "Poison Dip",
+  "level": 7,
+  "description": "Add <span class=\"keyword-poison\">poison</span> to the top and bottom sides",
+  "references": ["poison"]
+}

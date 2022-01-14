@@ -1,0 +1,7 @@
+{
+  "id": "blood-spellbook",
+  "name": "Blood Spellbook",
+  "level": 4,
+  "description": "Learn a new <span class=\"keyword-spell\">spell</span>",
+  "spell": "blood"
+}

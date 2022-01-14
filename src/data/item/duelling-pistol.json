@@ -1,0 +1,6 @@
+{
+  "id": "duelling-pistol",
+  "name": "Duelling Pistol",
+  "level": 5,
+  "description": "+1 to all sides if there is exactly 1 enemy left"
+}

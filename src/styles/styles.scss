@@ -71,3 +71,11 @@ a:hover {
     border-bottom: 2px solid $snd-hero-color;
   }
 }
+
+.snd-hero-link-item {
+  font-size: $size-6;
+
+  @include mobile {
+    font-size: $size-7;
+  }
+}
