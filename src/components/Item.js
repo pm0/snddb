@@ -8,8 +8,8 @@ const Item = ({ item }) => {
   return (
     <div>
       <div className="is-flex is-justify-content-center is-align-items-center">
-        <span className="is-size-4 snd-hero-title-item">{name}</span>
-        <RomanNumeral value={level} />
+        <span className="is-size-4 has-text-weight-bold snd-hero-title-item">{name}</span>
+        <RomanNumeral value={level} type="icon" />
       </div>
       <div
         dangerouslySetInnerHTML={{ __html: description }}

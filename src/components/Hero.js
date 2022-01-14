@@ -15,8 +15,8 @@ const Hero = ({ hero }) => {
   return (
     <div>
       <div className="is-flex is-justify-content-center is-align-items-center">
-        <span className={`is-size-4 snd-hero-title-${type}`}>{name}</span>
-        <RomanNumeral value={level} />
+        <span className={`is-size-4 has-text-weight-bold snd-hero-title-${type}`}>{name}</span>
+        <RomanNumeral value={level} type="icon" />
         <div className={styles.healthPips}>{pips}</div>
       </div>
       <div className="mt-3" />

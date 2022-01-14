@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Heading } from 'react-bulma-components';
+import RomanNumeral from './RomanNumeral';
 import * as styles from './HeroesSection.module.scss';
 
 const heroTypeOrder = ['adept', 'acolyte', 'defender', 'warrior', 'thief'];
@@ -18,10 +19,12 @@ const HeroesSection = (props) => {
 
   return (
     <>
-      <Heading size={3}>Heroes</Heading>
+      <Heading size={2} className="is-underlined">
+        Heroes
+      </Heading>
       {[1, 2, 3].map((level) => (
         <div key={level}>
-          <Heading size={4}>Level {level}</Heading>
+          <RomanNumeral value={level} type="header" />
           <div
             className={`${styles.levelSection} is-flex${
               level > 1 ? ' is-flex-direction-column' : ''
