@@ -4,7 +4,9 @@ import * as styles from './HeroFaces.module.scss';
 const Face = ({ face, heroType }) =>
   face === null ? (
     <div
-      className={`${styles.face} snd-hero-border-${heroType} has-text-weight-bold has-text-acolyte`}
+      className={`${styles.face} snd-hero-border-${heroType}
+        is-flex is-justify-content-center is-align-items-center
+        has-text-weight-bold has-text-acolyte`}
     >
       X
     </div>

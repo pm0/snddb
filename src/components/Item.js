@@ -7,13 +7,13 @@ const Item = ({ item }) => {
 
   return (
     <div>
-      <div className="is-flex is-align-items-center">
+      <div className="is-flex is-justify-content-center is-align-items-center">
         <span className="is-size-4 snd-hero-title-item">{name}</span>
         <RomanNumeral value={level} />
       </div>
       <div
         dangerouslySetInnerHTML={{ __html: description }}
-        className="is-size-5 is-size-6-mobile"
+        className="is-size-5 is-size-6-mobile has-text-centered"
       />
       {spell && <Spell {...spell} type="item" />}
     </div>

@@ -6,7 +6,7 @@ export function mapEdgesToNodes(data) {
 export function formatDescriptionFromReferences(field) {
   field.references.forEach((ref) => {
     const oldSubstr = `class="keyword-${ref.jsonId}"`;
-    const newSubstr = `class="keyword-${ref.jsonId} has-tooltip-right has-tooltip-top-mobile" data-tooltip="${ref.jsonId}: ${ref.description}"`;
+    const newSubstr = `class="keyword-${ref.jsonId} has-tooltip-top" data-tooltip="${ref.jsonId}: ${ref.description}"`;
     field.description = field.description.replace(oldSubstr, newSubstr);
   });
 }

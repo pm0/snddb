@@ -3,13 +3,6 @@
 .root {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 100%;
-  min-width: 60%;
-  width: 0;
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
 .face {
