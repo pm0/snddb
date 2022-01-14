@@ -4,7 +4,7 @@ import GraphQLErrorList from '../components/GraphQLErrorList';
 import SEO from '../components/SEO';
 import IndexPageContent from '../pageContent/IndexPageContent';
 import PageLayout from '../containers/PageLayout';
-import { mapEdgesToNodes } from '../lib/helpers';
+import { mapEdgesToNodes, formatDescriptionFromReferences } from '../lib/helpers';
 
 export const query = graphql`
   query IndexPageQuery {
@@ -25,6 +25,22 @@ export const query = graphql`
         node {
           name
           level
+          name
+          level
+          description
+          references {
+            description
+            jsonId
+          }
+          spell {
+            cost
+            description
+            name
+            references {
+              jsonId
+              description
+            }
+          }
           jsonId
         }
       }
@@ -43,6 +59,14 @@ const IndexPage = ({ data, errors }) => {
 
   const heroes = (data || {}).heroes ? mapEdgesToNodes(data.heroes) : [];
   const items = (data || {}).items ? mapEdgesToNodes(data.items) : [];
+  items.forEach((item) => {
+    if (item && item.references) {
+      formatDescriptionFromReferences(item);
+    }
+    if (item && item.spell && item.spell.references) {
+      formatDescriptionFromReferences(item.spell);
+    }
+  });
 
   return (
     <PageLayout>

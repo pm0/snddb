@@ -73,9 +73,20 @@ a:hover {
 }
 
 .snd-hero-link-item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   font-size: $size-6;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
   @include mobile {
     font-size: $size-7;
   }
+}
+
+.snd-hero-title-item {
+  margin-bottom: 0.5rem !important;
 }
