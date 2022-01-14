@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 import { Heading } from 'react-bulma-components';
 import * as styles from './HeroesSection.module.scss';
 
@@ -15,19 +14,11 @@ const orderValueSort = (a, b) => {
 };
 
 const HeroesSection = (props) => {
-  const { heroes, headingSize, linkTitle } = props;
-
-  const heading = linkTitle ? (
-    <Heading size={headingSize}>
-      <Link to="/hero">Heroes</Link>
-    </Heading>
-  ) : (
-    <Heading size={headingSize}>Heroes</Heading>
-  );
+  const { heroes, onSelectHero } = props;
 
   return (
     <>
-      {heading}
+      <Heading size={3}>Heroes</Heading>
       {[1, 2, 3].map((level) => (
         <div key={level}>
           <Heading size={4}>Level {level}</Heading>
@@ -45,13 +36,13 @@ const HeroesSection = (props) => {
                   .filter((hero) => hero.type === heroType && hero.level === level)
                   .sort(orderValueSort)
                   .map((hero) => (
-                    <Link
+                    <div
                       key={hero.jsonId}
-                      to={`/hero/${hero.jsonId}/`}
+                      onClick={() => onSelectHero(hero.jsonId)}
                       className={`snd-hero-link-${hero.type}`}
                     >
                       {hero.name}
-                    </Link>
+                    </div>
                   ))}
               </div>
             ))}

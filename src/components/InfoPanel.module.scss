@@ -1,0 +1,42 @@
+@import '~bulma/sass/utilities/_all.sass';
+
+.root {
+  position: sticky;
+  bottom: 2rem;
+  width: 50%;
+  visibility: hidden;
+
+  &:global(.open) {
+    visibility: visible;
+  }
+
+  @include mobile {
+    width: 100%;
+    bottom: 1rem;
+  }
+}
+
+.inner {
+  border: 2px solid $white-bis;
+  border-radius: 4px;
+  background-color: $black-bis;
+  padding: 0.5rem 0.75rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.75rem;
+  padding: 6px 6px 9px;
+  border: 2px solid $white-bis;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  line-height: 0.75rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $black-bis;
+    background-color: $white-bis;
+  }
+}

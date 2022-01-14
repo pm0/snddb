@@ -1,0 +1,12 @@
+@import '~bulma/sass/utilities/_all.sass';
+@import '../styles/custom-colors.scss';
+
+.root {
+  margin-left: 0.75rem;
+  padding: 0 0.25rem;
+  border: 1px solid $defender;
+  color: $defender;
+  background-color: $black;
+  font-family: monospace;
+  font-weight: bold;
+}

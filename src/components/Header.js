@@ -17,12 +17,6 @@ const Header = ({ navVisible, toggleNav }) => {
           <Link to="/" className="navbar-item">
             <span className="is-size-5">Home</span>
           </Link>
-          <Link to="/hero" className="navbar-item">
-            <span className="is-size-5">Heroes</span>
-          </Link>
-          <Link to="/item" className="navbar-item">
-            <span className="is-size-5">Items</span>
-          </Link>
         </Navbar.Container>
       </Navbar.Menu>
     </Navbar>

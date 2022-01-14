@@ -32,71 +32,9 @@ exports.createSchemaCustomization = ({ actions }) => {
   actions.createTypes(typeDefs);
 };
 
-async function createHeroPages(graphql, actions) {
-  const { createPage } = actions;
-  const result = await graphql(`
-    {
-      allHero {
-        edges {
-          node {
-            jsonId
-          }
-        }
-      }
-    }
-  `);
-
-  if (result.errors) throw result.errors;
-
-  const heroEdges = (result.data.allHero || {}).edges || [];
-
-  heroEdges.forEach((edge) => {
-    const id = edge.node.jsonId;
-    const path = `/hero/${id}/`;
-
-    createPage({
-      path,
-      component: require.resolve('./src/templates/HeroPageTemplate.js'),
-      context: {
-        id,
-      },
-    });
-  });
-}
-
-async function createItemPages(graphql, actions) {
-  const { createPage } = actions;
-  const result = await graphql(`
-    {
-      allItem {
-        edges {
-          node {
-            jsonId
-          }
-        }
-      }
-    }
-  `);
-
-  if (result.errors) throw result.errors;
-
-  const itemEdges = (result.data.allItem || {}).edges || [];
-
-  itemEdges.forEach((edge) => {
-    const id = edge.node.jsonId;
-    const path = `/item/${id}/`;
-
-    createPage({
-      path,
-      component: require.resolve('./src/templates/ItemPageTemplate.js'),
-      context: {
-        id,
-      },
-    });
-  });
-}
-
+/*
 exports.createPages = async ({ graphql, actions }) => {
   await createHeroPages(graphql, actions);
   await createItemPages(graphql, actions);
 };
+*/

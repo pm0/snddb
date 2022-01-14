@@ -4,18 +4,38 @@ import GraphQLErrorList from '../components/GraphQLErrorList';
 import SEO from '../components/SEO';
 import IndexPageContent from '../pageContent/IndexPageContent';
 import PageLayout from '../containers/PageLayout';
-import { mapEdgesToNodes, formatDescriptionFromReferences } from '../lib/helpers';
+import { mapEdgesToNodes, formatHero, formatDescriptionFromReferences } from '../lib/helpers';
 
 export const query = graphql`
   query IndexPageQuery {
     heroes: allHero {
       edges {
         node {
-          type
           name
           level
+          hp
           type
-          order
+          faces {
+            value
+            effect {
+              description
+              jsonId
+              hasValue
+              references {
+                description
+                jsonId
+              }
+            }
+          }
+          spell {
+            cost
+            description
+            name
+            references {
+              jsonId
+              description
+            }
+          }
           jsonId
         }
       }
@@ -23,8 +43,6 @@ export const query = graphql`
     items: allItem {
       edges {
         node {
-          name
-          level
           name
           level
           description
@@ -59,6 +77,11 @@ const IndexPage = ({ data, errors }) => {
 
   const heroes = (data || {}).heroes ? mapEdgesToNodes(data.heroes) : [];
   const items = (data || {}).items ? mapEdgesToNodes(data.items) : [];
+
+  heroes.forEach((hero) => {
+    formatHero(hero);
+  });
+
   items.forEach((item) => {
     if (item && item.references) {
       formatDescriptionFromReferences(item);

@@ -46,11 +46,24 @@ a:hover {
     border-radius: 2px;
     background-color: $snd-hero-color;
     color: $white-ter;
-    font-size: $size-5;
+
     padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    font-size: $size-5;
 
     @include mobile {
+      width: 45%;
+      margin-right: 5%;
+      margin-bottom: 0.5rem;
+
       font-size: $size-6;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 
@@ -59,9 +72,8 @@ a:hover {
     text-underline-offset: 0.1rem;
   }
 
-  .snd-hero-die-face-#{$name} {
+  .snd-hero-border-#{$name} {
     border-color: $snd-hero-color;
-    background-color: $scheme-main-bis;
   }
 
   .spell-#{$name} {
@@ -77,16 +89,7 @@ a:hover {
   margin-bottom: 1rem;
   font-size: $size-6;
 
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
   @include mobile {
     font-size: $size-7;
   }
-}
-
-.snd-hero-title-item {
-  margin-bottom: 0.5rem !important;
 }

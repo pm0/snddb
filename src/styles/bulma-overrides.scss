@@ -1,18 +1,4 @@
-@import '~bulma/sass/utilities/functions.sass';
-
-$adept: rgb(33, 124, 145);
-$acolyte: rgb(173, 31, 30);
-$defender: rgb(104, 120, 135);
-$warrior: rgb(182, 158, 10);
-$thief: rgb(196, 94, 22);
-$full-red: rgb(255, 0, 0);
-
-$adept-invert: findColorInvert($adept);
-$acolyte-invert: findColorInvert($acolyte);
-$defender-invert: findColorInvert($defender);
-$warrior-invert: findColorInvert($warrior);
-$thief-invert: findColorInvert($thief);
-$full-red-invert: findColorInvert($full-red);
+@import './custom-colors.scss';
 
 $custom-colors: (
   'adept': (

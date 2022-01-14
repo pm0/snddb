@@ -3,10 +3,10 @@ export function mapEdgesToNodes(data) {
   return data.edges.map((edge) => edge.node);
 }
 
-export function formatDescriptionFromReferences(field, tooltipClass = 'has-tooltip-top') {
+export function formatDescriptionFromReferences(field) {
   field.references.forEach((ref) => {
     const oldSubstr = `class="keyword-${ref.jsonId}"`;
-    const newSubstr = `class="keyword-${ref.jsonId} ${tooltipClass}" data-tooltip="${ref.jsonId}: ${ref.description}"`;
+    const newSubstr = `class="keyword-${ref.jsonId} has-tooltip-right has-tooltip-top-mobile" data-tooltip="${ref.jsonId}: ${ref.description}"`;
     field.description = field.description.replace(oldSubstr, newSubstr);
   });
 }
@@ -18,8 +18,7 @@ export function formatHero(hero) {
         face.effect.description = face.effect.description.replaceAll('{value}', face.value);
       }
       if (face.effect.references) {
-        const tooltipClass = idx === 1 ? 'has-tooltip-right' : 'has-tooltip-top';
-        formatDescriptionFromReferences(face.effect, tooltipClass);
+        formatDescriptionFromReferences(face.effect);
       }
     }
   });

@@ -1,0 +1,18 @@
+@import '../styles/custom-colors.scss';
+
+.healthPips {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3px;
+  row-gap: 8px;
+  margin-left: 0.75rem;
+}
+
+.healthPip {
+  width: 10px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border: 1px solid $acolyte;
+  border-radius: 25%;
+  background-color: $acolyte;
+}

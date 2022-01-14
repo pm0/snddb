@@ -1,0 +1,22 @@
+@import '~bulma/sass/utilities/_all.sass';
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  min-width: 60%;
+  width: 0;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.face {
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.25rem;
+  margin: -1px;
+  text-align: center;
+  background-color: $black;
+}

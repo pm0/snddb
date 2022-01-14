@@ -1,20 +1,13 @@
-@import '../styles/bulma-overrides.scss';
 @import '~bulma/sass/utilities/_all.sass';
+@import '../styles/custom-colors.scss';
 
 $padding: 0.25rem 1rem;
 
 .root {
-  border-radius: 0.5rem;
-  background-color: $scheme-main-bis;
-
-  &:global(.spell-item) {
-    display: inline-block;
-    min-width: 150px;
-  }
-
-  @include mobile {
-    font-size: $size-7;
-  }
+  border-radius: 4px;
+  background-color: $black;
+  display: inline-block;
+  min-width: 150px;
 }
 
 .titleWrapper {
@@ -38,15 +31,6 @@ $padding: 0.25rem 1rem;
 
   &:not(:last-child) {
     margin-right: 4px;
-  }
-
-  @include mobile {
-    width: 9px;
-    height: 9px;
-
-    &:not(:last-child) {
-      margin-right: 3px;
-    }
   }
 }
 
