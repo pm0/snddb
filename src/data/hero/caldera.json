@@ -12,6 +12,5 @@
     null,
     { "effect": "damage-mana", "value": 1 }
   ],
-  "spell": "scald",
-  "order": 4
+  "spell": "scald"
 }

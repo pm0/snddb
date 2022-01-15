@@ -11,6 +11,5 @@
     { "effect": "shield-cleave", "value": 1 },
     null,
     { "effect": "damage-cleave", "value": 1 }
-  ],
-  "order": 2
+  ]
 }

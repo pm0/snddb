@@ -11,6 +11,5 @@
     { "effect": "shield", "value": 2 },
     null,
     { "effect": "damage-self-shield", "value": 2 }
-  ],
-  "order": 4
+  ]
 }

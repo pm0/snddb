@@ -12,6 +12,5 @@
     null,
     { "effect": "mana", "value": 1 }
   ],
-  "spell": "slice",
-  "order": 1
+  "spell": "slice"
 }

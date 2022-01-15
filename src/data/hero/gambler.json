@@ -11,6 +11,5 @@
     { "effect": "damage", "value": 1 },
     null,
     null
-  ],
-  "order": 6
+  ]
 }

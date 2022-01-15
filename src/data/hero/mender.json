@@ -12,6 +12,5 @@
     null,
     { "effect": "heal-mana", "value": 2 }
   ],
-  "spell": "soothe",
-  "order": 1
+  "spell": "soothe"
 }

@@ -12,6 +12,5 @@
     null,
     { "effect": "mana-single", "value": 3 }
   ],
-  "spell": "crush",
-  "order": 1
+  "spell": "crush"
 }

@@ -11,6 +11,5 @@
     null,
     null,
     { "effect": "shield-engage", "value": 2 }
-  ],
-  "order": 4
+  ]
 }

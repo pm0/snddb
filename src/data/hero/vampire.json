@@ -12,6 +12,5 @@
     { "effect": "damage-self-heal", "value": 2 },
     { "effect": "heal", "value": 5 }
   ],
-  "spell": "infuse",
-  "order": 4
+  "spell": "infuse"
 }

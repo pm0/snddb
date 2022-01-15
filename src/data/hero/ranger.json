@@ -11,6 +11,5 @@
     null,
     null,
     { "effect": "ranged-cleave", "value": 1 }
-  ],
-  "order": 2
+  ]
 }

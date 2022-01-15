@@ -12,6 +12,5 @@
     null,
     { "effect": "heal-regen", "value": 1 }
   ],
-  "spell": "vine",
-  "order": 2
+  "spell": "vine"
 }

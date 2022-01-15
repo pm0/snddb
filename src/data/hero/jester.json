@@ -12,6 +12,5 @@
     null,
     { "effect": "mana", "value": 2 }
   ],
-  "spell": "flick",
-  "order": 5
+  "spell": "flick"
 }

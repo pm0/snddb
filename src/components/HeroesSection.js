@@ -7,7 +7,7 @@ import * as styles from './HeroesSection.module.scss';
 const heroTypeOrder = ['adept', 'acolyte', 'defender', 'warrior', 'thief'];
 
 const orderValueSort = (a, b) => {
-  if (a.order > b.order) {
+  if (a.name > b.name) {
     return 1;
   } else {
     return -1;

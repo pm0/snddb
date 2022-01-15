@@ -11,6 +11,5 @@
     { "effect": "boost-ally-damage-shields", "value": 2 },
     null,
     { "effect": "damage", "value": 3 }
-  ],
-  "order": 1
+  ]
 }

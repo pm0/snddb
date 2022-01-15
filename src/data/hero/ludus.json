@@ -11,6 +11,5 @@
     { "effect": "damage", "value": 1 },
     { "effect": "damage", "value": 2 },
     { "effect": "damage", "value": 3 }
-  ],
-  "order": 1
+  ]
 }

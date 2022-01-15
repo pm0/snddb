@@ -11,6 +11,5 @@
     { "effect": "mana-single", "value": 2 },
     null,
     { "effect": "shield", "value": 3 }
-  ],
-  "order": 2
+  ]
 }

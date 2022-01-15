@@ -12,6 +12,5 @@
     { "effect": "mana", "value": 1 },
     { "effect": "damage-mana", "value": 1 }
   ],
-  "spell": "imbue",
-  "order": 1
+  "spell": "imbue"
 }

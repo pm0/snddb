@@ -11,6 +11,5 @@
     { "effect": "damage-poison", "value": 1 },
     { "effect": "damage-engage", "value": 1 },
     { "effect": "damage-self-shield", "value": 2 }
-  ],
-  "order": 3
+  ]
 }

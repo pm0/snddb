@@ -12,6 +12,5 @@
     { "effect": "mana", "value": 1 },
     { "effect": "heal", "value": 3 }
   ],
-  "spell": "restore",
-  "order": 1
+  "spell": "restore"
 }

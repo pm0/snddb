@@ -11,6 +11,5 @@
     { "effect": "shield-cleanse", "value": 2 },
     null,
     { "effect": "mana", "value": 3 }
-  ],
-  "order": 3
+  ]
 }

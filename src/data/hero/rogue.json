@@ -11,6 +11,5 @@
     { "effect": "damage-poison", "value": 1 },
     { "effect": "dodge" },
     { "effect": "damage-cantrip", "value": 1 }
-  ],
-  "order": 3
+  ]
 }

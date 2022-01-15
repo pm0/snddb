@@ -12,6 +12,5 @@
     null,
     { "effect": "damage-mana", "value": 1 }
   ],
-  "spell": "zap",
-  "order": 1
+  "spell": "zap"
 }

@@ -12,6 +12,5 @@
     null,
     { "effect": "shield-mana", "value": 1 }
   ],
-  "spell": "chill",
-  "order": 4
+  "spell": "chill"
 }

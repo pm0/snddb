@@ -11,6 +11,5 @@
     { "effect": "shield", "value": 2 },
     { "effect": "shield", "value": 1 },
     { "effect": "damage", "value": 2 }
-  ],
-  "order": 1
+  ]
 }
