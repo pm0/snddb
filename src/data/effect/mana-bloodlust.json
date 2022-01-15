@@ -1,0 +1,6 @@
+{
+  "id": "mana-bloodlust",
+  "hasValue": true,
+  "description": "+{value} mana<br/><span class=\"keyword-bloodlust\">bloodlust</span>",
+  "references": ["bloodlust"]
+}

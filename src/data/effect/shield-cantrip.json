@@ -1,0 +1,6 @@
+{
+  "id": "shield-cantrip",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-cantrip\">cantrip</span>",
+  "references": ["cantrip"]
+}

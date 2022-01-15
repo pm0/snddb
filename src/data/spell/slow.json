@@ -1,0 +1,7 @@
+{
+  "id": "slow",
+  "name": "Slow",
+  "cost": 4,
+  "description": "1 damage<br /><span class=\"keyword-weaken\">weaken</span>, <span class=\"keyword-cleave\">cleave</span>",
+  "references": ["weaken", "cleave"]
+}

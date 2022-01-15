@@ -1,0 +1,7 @@
+{
+  "id": "miasma",
+  "name": "Miasma",
+  "cost": 3,
+  "description": "1 damage<br /><span class=\"keyword-poison\">poison</span>, <span class=\"keyword-cleave\">cleave</span>",
+  "references": ["poison", "cleave"]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "mana-cantrip",
+  "hasValue": true,
+  "description": "+{value} mana<br/><span class=\"keyword-cantrip\">cantrip</span>",
+  "references": ["cantrip"]
+}

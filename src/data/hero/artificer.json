@@ -1,0 +1,16 @@
+{
+  "id": "artificer",
+  "name": "Artificer",
+  "type": "adept",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "mana-single", "value": 4 },
+    { "effect": "damage-self-heal-single", "value": 4 },
+    { "effect": "damage-charged-single", "value": 2 },
+    { "effect": "poison-single", "value": 2 },
+    { "effect": "heal-single", "value": 10 },
+    { "effect": "mana-single", "value": 4 }
+  ],
+  "spell": "blades"
+}

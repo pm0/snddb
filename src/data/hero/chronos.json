@@ -1,0 +1,16 @@
+{
+  "id": "chronos",
+  "name": "Chronos",
+  "type": "adept",
+  "level": 3,
+  "hp": 7,
+  "faces": [
+    { "effect": "mana-growth", "value": 2 },
+    { "effect": "reuse-dice" },
+    { "effect": "reroll-cantrip", "value": 1 },
+    { "effect": "dodge" },
+    null,
+    { "effect": "mana-growth", "value": 2 }
+  ],
+  "spell": "slow"
+}

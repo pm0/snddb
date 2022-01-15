@@ -1,0 +1,16 @@
+{
+  "id": "sorcerer",
+  "name": "Sorcerer",
+  "type": "adept",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "mana-cantrip", "value": 1 },
+    { "effect": "reroll-cantrip", "value": 1 },
+    { "effect": "mana-cantrip", "value": 1 },
+    { "effect": "shield-cantrip", "value": 2 },
+    null,
+    { "effect": "mana-cantrip", "value": 1 }
+  ],
+  "spell": "miasma"
+}

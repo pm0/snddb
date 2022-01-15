@@ -1,0 +1,16 @@
+{
+  "id": "warlock",
+  "name": "Warlock",
+  "type": "adept",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "damage-self-heal", "value": 3 },
+    { "effect": "damage-self-heal-single", "value": 4 },
+    { "effect": "damage-charged-single", "value": 2 },
+    null,
+    null,
+    { "effect": "damage-self-heal", "value": 3 }
+  ],
+  "spell": "blaze"
+}

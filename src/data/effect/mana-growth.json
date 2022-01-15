@@ -1,0 +1,6 @@
+{
+  "id": "mana-growth",
+  "hasValue": true,
+  "description": "+{value} mana<br/><span class=\"keyword-growth\">growth</span>",
+  "references": ["growth"]
+}
