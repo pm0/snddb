@@ -1,0 +1,15 @@
+{
+  "id": "assassin",
+  "name": "Assassin",
+  "type": "thief",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "ranged-engage", "value": 2 },
+    { "effect": "poison-single", "value": 3 },
+    { "effect": "damage-cruel", "value": 3 },
+    { "effect": "dodge" },
+    null,
+    { "effect": "ranged-engage", "value": 2 }
+  ]
+}

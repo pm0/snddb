@@ -1,0 +1,15 @@
+{
+  "id": "dancer",
+  "name": "Dancer",
+  "type": "thief",
+  "level": 3,
+  "hp": 9,
+  "faces": [
+    { "effect": "damage-cantrip", "value": 1 },
+    { "effect": "damage-all-rampage-pain", "value": 1 },
+    { "effect": "damage-cantrip", "value": 1 },
+    { "effect": "damage", "value": 4 },
+    { "effect": "dodge" },
+    { "effect": "damage-cantrip", "value": 1 }
+  ]
+}

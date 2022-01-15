@@ -1,0 +1,6 @@
+{
+  "id": "damage-all-rampage-pain",
+  "hasValue": true,
+  "description": "{value} damage to all enemies<br/><span class=\"keyword-rampage\">rampage</span>, <span class=\"keyword-pain\">pain</span>",
+  "references": ["rampage", "pain"]
+}

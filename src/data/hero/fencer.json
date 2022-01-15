@@ -1,0 +1,15 @@
+{
+  "id": "fencer",
+  "name": "Fencer",
+  "type": "thief",
+  "level": 3,
+  "hp": 9,
+  "faces": [
+    { "effect": "damage-self-shield", "value": 3 },
+    { "effect": "damage-rampage", "value": 2 },
+    { "effect": "damage-cruel", "value": 3 },
+    { "effect": "damage-all", "value": 1 },
+    null,
+    { "effect": "damage-self-shield", "value": 3 }
+  ]
+}

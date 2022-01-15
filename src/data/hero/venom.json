@@ -1,0 +1,15 @@
+{
+  "id": "venom",
+  "name": "Venom",
+  "type": "thief",
+  "level": 3,
+  "hp": 9,
+  "faces": [
+    { "effect": "damage-poison", "value": 2 },
+    { "effect": "triple-poison", "value": 2 },
+    { "effect": "damage-poison", "value": 2 },
+    { "effect": "heal-cleanse", "value": 3 },
+    null,
+    { "effect": "damage-poison", "value": 2 }
+  ]
+}

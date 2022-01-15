@@ -1,0 +1,15 @@
+{
+  "id": "sharpshot",
+  "name": "Sharpshot",
+  "type": "thief",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "ranged", "value": 3 },
+    { "effect": "kill-with-less-ranged", "value": 5 },
+    { "effect": "ranged-cleave", "value": 2 },
+    null,
+    null,
+    { "effect": "ranged", "value": 3 }
+  ]
+}
