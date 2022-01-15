@@ -1,0 +1,7 @@
+{
+  "id": "beam",
+  "name": "Beam",
+  "cost": 3,
+  "description": "3 damage<br /><span class=\"keyword-ranged\">ranged</span>",
+  "references": ["ranged"]
+}

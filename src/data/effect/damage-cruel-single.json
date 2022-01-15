@@ -1,0 +1,6 @@
+{
+  "id": "damage-cruel-single",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-cruel\">cruel</span>, <span class=\"keyword-single-use\">single-use</span>",
+  "references": ["cruel", "single-use"]
+}

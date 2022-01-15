@@ -1,0 +1,7 @@
+{
+  "id": "zap",
+  "name": "Zap",
+  "cost": 3,
+  "description": "Kill an enemy with exactly 4 hp<br /><span class=\"keyword-ranged\">ranged</span>",
+  "references": ["ranged"]
+}

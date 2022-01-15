@@ -8,7 +8,7 @@
     { "effect": "shield", "value": 3 },
     { "effect": "shield-all", "value": 1 },
     { "effect": "reroll-cantrip", "value": 1 },
-    { "effect": "mana-single-use", "value": 2 },
+    { "effect": "mana-single", "value": 2 },
     null,
     { "effect": "shield", "value": 3 }
   ],

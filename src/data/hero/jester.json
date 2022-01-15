@@ -1,0 +1,17 @@
+{
+  "id": "jester",
+  "name": "Jester",
+  "type": "adept",
+  "level": 2,
+  "hp": 7,
+  "faces": [
+    { "effect": "mana", "value": 2 },
+    { "effect": "mana-single", "value": 3 },
+    { "effect": "reroll-cantrip", "value": 1 },
+    { "effect": "dodge" },
+    null,
+    { "effect": "mana", "value": 2 }
+  ],
+  "spell": "flick",
+  "order": 5
+}

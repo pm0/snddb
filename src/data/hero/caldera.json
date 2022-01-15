@@ -1,0 +1,17 @@
+{
+  "id": "caldera",
+  "name": "Caldera",
+  "type": "adept",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    { "effect": "shield-mana", "value": 1 },
+    { "effect": "damage-cruel-single", "value": 3 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "mana", "value": 2 },
+    null,
+    { "effect": "damage-mana", "value": 1 }
+  ],
+  "spell": "scald",
+  "order": 4
+}

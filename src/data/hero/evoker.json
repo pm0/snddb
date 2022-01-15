@@ -1,0 +1,17 @@
+{
+  "id": "evoker",
+  "name": "Evoker",
+  "type": "adept",
+  "level": 2,
+  "hp": 8,
+  "faces": [
+    null,
+    { "effect": "mana", "value": 3 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "mana", "value": 2 },
+    null,
+    null
+  ],
+  "spell": "beam",
+  "order": 2
+}
