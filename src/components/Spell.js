@@ -12,7 +12,7 @@ const Spell = (props) => {
   return (
     <div className={`${styles.root} spell-${type}`}>
       <div className={`${styles.titleWrapper} spell-divider-${type}`}>
-        <span>{name}</span>
+        <span className="has-text-weight-bold">{name}</span>
         <div className={styles.costPips}>{pips}</div>
       </div>
       <div dangerouslySetInnerHTML={{ __html: description }} className={styles.description} />
