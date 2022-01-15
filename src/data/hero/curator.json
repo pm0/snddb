@@ -1,0 +1,15 @@
+{
+  "id": "curator",
+  "name": "Curator",
+  "type": "warrior",
+  "level": 3,
+  "hp": 10,
+  "faces": [
+    { "effect": "damage-rampage", "value": 2 },
+    { "effect": "damage-cruel", "value": 3 },
+    { "effect": "damage-growth", "value": 3 },
+    { "effect": "damage-cantrip", "value": 1 },
+    { "effect": "damage-pain", "value": 5 },
+    { "effect": "ranged-engage", "value": 2 }
+  ]
+}

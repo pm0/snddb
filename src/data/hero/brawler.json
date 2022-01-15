@@ -1,0 +1,15 @@
+{
+  "id": "brawler",
+  "name": "Brawler",
+  "type": "warrior",
+  "level": 3,
+  "hp": 11,
+  "faces": [
+    { "effect": "damage-steel", "value": 1 },
+    { "effect": "damage-rampage", "value": 2 },
+    { "effect": "damage-rampage", "value": 2 },
+    { "effect": "stun" },
+    null,
+    { "effect": "damage-steel", "value": 1 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "barbarian",
+  "name": "Barbarian",
+  "type": "warrior",
+  "level": 3,
+  "hp": 12,
+  "faces": [
+    { "effect": "damage-bloodlust", "value": 2 },
+    { "effect": "damage-pain", "value": 6 },
+    { "effect": "damage-deathwish", "value": 3 },
+    { "effect": "undying" },
+    null,
+    { "effect": "damage-bloodlust", "value": 2 }
+  ]
+}

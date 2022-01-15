@@ -1,0 +1,6 @@
+{
+  "id": "damage-rampage",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-rampage\">rampage</span>",
+  "references": ["rampage"]
+}

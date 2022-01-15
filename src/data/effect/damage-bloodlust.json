@@ -1,0 +1,6 @@
+{
+  "id": "damage-bloodlust",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-bloodlust\">bloodlust</span>",
+  "references": ["bloodlust"]
+}

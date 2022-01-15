@@ -1,0 +1,15 @@
+{
+  "id": "veteran",
+  "name": "Veteran",
+  "type": "warrior",
+  "level": 3,
+  "hp": 12,
+  "faces": [
+    { "effect": "damage", "value": 3 },
+    { "effect": "damage", "value": 4 },
+    { "effect": "damage", "value": 4 },
+    { "effect": "shield", "value": 4 },
+    { "effect": "shield", "value": 4 },
+    { "effect": "damage", "value": 3 }
+  ]
+}
