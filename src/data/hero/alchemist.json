@@ -1,0 +1,16 @@
+{
+  "id": "alchemist",
+  "name": "Alchemist",
+  "type": "acolyte",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "heal-regen", "value": 2 },
+    { "effect": "poison-single", "value": 3 },
+    { "effect": "heal-mana", "value": 2 },
+    { "effect": "heal-mana", "value": 2 },
+    null,
+    { "effect": "heal-regen", "value": 2 }
+  ],
+  "spell": "liquor"
+}

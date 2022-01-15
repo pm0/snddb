@@ -1,0 +1,7 @@
+{
+  "id": "liquor",
+  "name": "Liquor",
+  "cost": 4,
+  "description": "Heal 20<br /><span class=\"keyword-cleanse\">cleanse</span>",
+  "references": ["cleanse"]
+}

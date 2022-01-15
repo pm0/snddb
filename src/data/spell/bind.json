@@ -1,0 +1,6 @@
+{
+  "id": "bind",
+  "name": "Bind",
+  "cost": 3,
+  "description": "Target ally becomes immune to damage this turn and loses -4 max hp"
+}

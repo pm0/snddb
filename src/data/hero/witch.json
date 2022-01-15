@@ -1,0 +1,16 @@
+{
+  "id": "witch",
+  "name": "Witch",
+  "type": "acolyte",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "heal-boost", "value": 1 },
+    { "effect": "heal-cleave", "value": 4 },
+    { "effect": "heal-cleanse", "value": 5 },
+    { "effect": "mana", "value": 3 },
+    null,
+    { "effect": "damage-weaken-ranged", "value": 1 }
+  ],
+  "spell": "salve"
+}

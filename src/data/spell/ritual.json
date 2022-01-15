@@ -1,0 +1,7 @@
+{
+  "id": "ritual",
+  "name": "Ritual",
+  "cost": 4,
+  "description": "Heal 1<br /><span class=\"keyword-cleanse\">cleanse</span>, <span class=\"keyword-cleave\">cleave</span>",
+  "references": ["cleanse", "cleave"]
+}

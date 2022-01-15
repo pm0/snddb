@@ -1,0 +1,6 @@
+{
+  "id": "damage-weaken-ranged",
+  "hasValue": true,
+  "description": "{value} damage<br/><span class=\"keyword-weaken\">weaken</span>, <span class=\"keyword-ranged\">ranged</span>",
+  "references": ["weaken", "ranged"]
+}

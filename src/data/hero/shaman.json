@@ -1,0 +1,16 @@
+{
+  "id": "shaman",
+  "name": "Shaman",
+  "type": "acolyte",
+  "level": 3,
+  "hp": 9,
+  "faces": [
+    { "effect": "damage-growth", "value": 3 },
+    { "effect": "max-hp", "value": 5 },
+    { "effect": "heal", "value": 10 },
+    { "effect": "heal-mana", "value": 2 },
+    null,
+    { "effect": "shield-growth", "value": 3 }
+  ],
+  "spell": "ritual"
+}

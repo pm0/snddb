@@ -1,0 +1,16 @@
+{
+  "id": "forsaken",
+  "name": "Forsaken",
+  "type": "acolyte",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "mana", "value": 2 },
+    { "effect": "revive" },
+    { "effect": "max-hp-all-pain", "value": 2 },
+    { "effect": "heal-all", "value": 2 },
+    { "effect": "damage-self-heal", "value": 2 },
+    { "effect": "mana", "value": 2 }
+  ],
+  "spell": "bind"
+}
