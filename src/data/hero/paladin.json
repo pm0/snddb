@@ -1,0 +1,15 @@
+{
+  "id": "paladin",
+  "name": "Paladin",
+  "type": "defender",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "heal-shield", "value": 3 },
+    { "effect": "shield-cleanse", "value": 4 },
+    { "effect": "mana", "value": 2 },
+    { "effect": "damage-heavy", "value": 3 },
+    null,
+    { "effect": "heal-shield", "value": 3 }
+  ]
+}

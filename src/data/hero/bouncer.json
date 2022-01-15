@@ -1,0 +1,15 @@
+{
+  "id": "bouncer",
+  "name": "Bouncer",
+  "type": "defender",
+  "level": 3,
+  "hp": 12,
+  "faces": [
+    { "effect": "redirect-self-shield", "value": 4 },
+    { "effect": "shield-revenge", "value": 2 },
+    { "effect": "damage-steel", "value": 2 },
+    { "effect": "stun" },
+    null,
+    { "effect": "redirect-self-shield", "value": 4 }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "undying",
+  "hasValue": false,
+  "description": "Target ally gains <span class=\"keyword-undying\">undying</span> this turn",
+  "references": ["undying"]
+}

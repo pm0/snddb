@@ -1,0 +1,6 @@
+{
+  "id": "shield-rescue",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-rescue\">rescue</span>",
+  "references": ["rescue"]
+}

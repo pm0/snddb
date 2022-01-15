@@ -1,0 +1,15 @@
+{
+  "id": "valkyrie",
+  "name": "Valkyrie",
+  "type": "defender",
+  "level": 3,
+  "hp": 8,
+  "faces": [
+    { "effect": "shield-revenge", "value": 2 },
+    { "effect": "shield-duplicate", "value": 3 },
+    { "effect": "undying" },
+    { "effect": "damage", "value": 3 },
+    null,
+    { "effect": "shield-revenge", "value": 2 }
+  ]
+}

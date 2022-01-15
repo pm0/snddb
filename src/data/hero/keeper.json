@@ -1,0 +1,15 @@
+{
+  "id": "keeper",
+  "name": "Keeper",
+  "type": "defender",
+  "level": 3,
+  "hp": 10,
+  "faces": [
+    { "effect": "undying" },
+    { "effect": "shield-rescue", "value": 2 },
+    { "effect": "revive" },
+    { "effect": "damage-deathwish", "value": 3 },
+    null,
+    { "effect": "undying" }
+  ]
+}

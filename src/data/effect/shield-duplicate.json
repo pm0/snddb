@@ -1,0 +1,6 @@
+{
+  "id": "shield-duplicate",
+  "hasValue": true,
+  "description": "Shield {value}<br/><span class=\"keyword-duplicate\">duplicate</span>",
+  "references": ["duplicate"]
+}
