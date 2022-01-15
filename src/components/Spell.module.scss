@@ -8,6 +8,10 @@ $padding: 0.25rem 1rem;
   background-color: $black;
   margin: 0 auto;
   width: 50%;
+
+  @include mobile {
+    width: 75%;
+  }
 }
 
 .titleWrapper {

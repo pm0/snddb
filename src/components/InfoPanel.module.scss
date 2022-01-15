@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.75rem;
+  margin: 0.5rem;
   padding: 6px 6px 9px;
   border: 2px solid $white-bis;
   border-radius: 8px;
@@ -41,5 +41,11 @@
   &:hover {
     color: $black-bis;
     background-color: $white-bis;
+  }
+
+  @media (max-width: 380px) {
+    background-color: $black-bis;
+    top: -50px;
+    right: -12px;
   }
 }
